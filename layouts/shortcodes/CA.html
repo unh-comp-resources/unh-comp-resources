@@ -1,0 +1,9 @@
+{{ $name := .Get 0 }}
+{{ $image := .Get 1 }}
+{{ $linkedin := .Get 2 }}
+
+![{{ $name }}]({{ $image }})
+
+**{{ $name }}**
+
+[LinkedIn Profile]({{ $linkedin }})
