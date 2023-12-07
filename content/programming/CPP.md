@@ -1,12 +1,11 @@
 ---
 layout: page
-title: C++
+title: C++  Programming
 nav_order: 4
 parent: Programming
 permalink: /docs/programming/C++
 ---
 
-# C++ Programming
 
 ## About
 
