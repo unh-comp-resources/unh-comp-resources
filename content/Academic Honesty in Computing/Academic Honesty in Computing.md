@@ -1,11 +1,8 @@
 ---
-layout: page
 title: Academic Honesty in Computing
-description: A Guideline of Academic Honesty in Programming Assignments
-nav_order: 2
 ---
 
-# Academic Honesty in Computing
+## Overview
 
 You will find here information about academic honesty guidelines in programming subjects. The goal is to help you understand when you can reuse code and how to collaborate with others on programming homework and projects.
 
