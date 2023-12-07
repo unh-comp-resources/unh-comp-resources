@@ -3,5 +3,5 @@ title: Classroom Assistants
 ---
 
 
-{{% children depth="5" %}}
+{{% children depth="6" %}}
 
