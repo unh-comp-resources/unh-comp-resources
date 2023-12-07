@@ -7,7 +7,6 @@ permalink: /docs/programming/perl
 ---
 
 
-# Perl Programming
 
 ## About
 
