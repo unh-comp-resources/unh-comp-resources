@@ -1,3 +1,3 @@
 # UNH COMPUTING RESOURCES
 
-[Computing-Website](https://github.com/unh-comp-resources/unh-comp-resources.git)
+[Computing-Website](https://unh-comp-resources.github.io/unh-comp-resources/)
