@@ -1,10 +1,5 @@
 ---
-layout: page
 title: Pipenv
-nav_order: 1
-parent: Virtual environments in Python
-grand_parent: Tools
-permalink: /docs/tools/Virtual_Environments/pipenv
 ---
 
 

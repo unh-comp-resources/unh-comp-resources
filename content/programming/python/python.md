@@ -1,10 +1,5 @@
 ---
-layout: page
 title: Python Programming
-nav_order: 2
-parent: Programming
-has_children: true
-permalink: /docs/programming/python
 ---
 
 

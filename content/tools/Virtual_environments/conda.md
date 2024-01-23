@@ -1,10 +1,5 @@
 ---
-layout: page
 title: Conda
-nav_order: 2
-parent: Virtual environments in Python
-grand_parent: Tools
-permalink: /docs/tools/Virtual_Environments/conda
 ---
 
 

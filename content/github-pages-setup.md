@@ -1,11 +1,6 @@
 ---
-layout: page
 title: GitHub Pages
-description: How to set up a GitHub Pages project locally on Ubuntu OS.
-nav_order: 4
 ---
-
-__________________
 
 To test your site locally, you'll need
 

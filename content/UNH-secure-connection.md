@@ -1,8 +1,5 @@
 ---
-layout: page
 title: UNH Secure Network
-description: Guide to connect to UNH secure network on university laptop
-nav_order: 10
 ---
 ## Connecting to Eduroam
 

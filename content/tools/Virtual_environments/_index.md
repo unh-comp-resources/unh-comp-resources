@@ -1,11 +1,5 @@
 ---
-layout: page
 title: Virtual environments in Python
-nav_order: 2
-has_children: true
-parent: Tools
-permalink: /docs/tools/virtual_environments
-has_toc: false
 ---
 
 

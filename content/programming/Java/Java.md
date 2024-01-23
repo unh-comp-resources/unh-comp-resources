@@ -1,32 +1,28 @@
 ---
-layout: page
 title: Java Programming
-nav_order: 3
-parent: Programming
-permalink: /docs/programming/Java
 ---
 
 
 ### Code Structure in Java:
- > * The source code file holds one class definition. The class represents a piece of the program.
- > * A class has one or more methods.
- > * A method is a set of statements that states how a method should be performed.
+- The source code file holds one class definition. The class represents a piece of the program.
+- A class has one or more methods.
+- A method is a set of statements that states how a method should be performed.
 
 ### How Java works:
- > * Type a source code file(example.java).
- > * Compile source code file to create a bytecode.
- > * The compiler gives complied output file(exampe.class)
- > * Java virtual machine runs an example.class file.
- > * Every Java application must have at least one class and only one main method per application.
- > * A JVM starts executing its main() method and keeps running until the main method is finished.
+- Type a source code file(example.java).
+- Compile source code file to create a bytecode.
+- The compiler gives complied output file(exampe.class)
+- Java virtual machine runs an example.class file.
+- Every Java application must have at least one class and only one main method per application.
+- A JVM starts executing its main() method and keeps running until the main method is finished.
 
 ### Some Syntax:
-  > 1. Each statement must end with a semicolon.
-  > 2. Most white spaces don’t matter.
-  > 3. The variable must be declared with type and name.
-  > 4. Classes and methods must be defined between a pair of curly braces.
-  > 5. Java has three standard looping constructs - while, do-while and for a loop.
-  > 6. A conditional test is an expression that results in a boolean value.
+1. Each statement must end with a semicolon.
+2. Most white spaces don’t matter.
+3. The variable must be declared with type and name.
+4. Classes and methods must be defined between a pair of curly braces.
+5. Java has three standard looping constructs - while, do-while and for a loop.
+6. A conditional test is an expression that results in a boolean value.
 
 ```java
 public class MyClass {
@@ -39,31 +35,31 @@ public class MyClass {
 ### Variables
 Variables are containers for storing data values.
 In Java, there are different types of variables, for example:
- > * String - stores text, such as "Hello". String values are surrounded by double quotes
- > * int - stores integers (whole numbers), without decimals, such as 123 or -123
- > * float - stores floating-point numbers, with decimals, such as 19.99 or -19.99
- > * char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
- > * boolean - stores values with two states: true or false
+- String - stores text, such as "Hello". String values are surrounded by double quotes
+- int - stores integers (whole numbers), without decimals, such as 123 or -123
+- float - stores floating-point numbers, with decimals, such as 19.99 or -19.99
+- char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+- boolean - stores values with two states: true or false
 
 ### Data Types
 Data types are divided into two groups:
- > * Primitive data types - includes byte, short, int, long, float, double, boolean and char
- > * Non-primitive data types - such as String, Arrays, and Classes.
+- Primitive data types - includes byte, short, int, long, float, double, boolean and char
+- Non-primitive data types - such as String, Arrays, and Classes.
 
 ### Conditions and If Statements
 Java supports the usual logical conditions from mathematics:
- > * Less than: a < b
- > * Less than or equal to: a <= b
- > * Greater than: a > b
- > * Greater than or equal to: a >= b
- > * Equal to a == b
- > * Not Equal to: a != b
+- Less than: a < b
+- Less than or equal to: a <= b
+- Greater than: a > b
+- Greater than or equal to: a >= b
+- Equal to a == b
+- Not Equal to: a != b
 
 Java has the following conditional statements:
- > * Use **if** to specify a block of code to be executed, **if a specified condition is true**
- > * Use **else** to specify a block of code to be executed **if the same condition is false**
- > * Use **else if** to specify a **new condition to test, if the first condition is false**
- > * Use the **switch** to specify **many alternative blocks of code to be executed**
+- Use **if** to specify a block of code to be executed, **if a specified condition is true**
+- Use **else** to specify a block of code to be executed **if the same condition is false**
+- Use **else if** to specify a **new condition to test, if the first condition is false**
+- Use the **switch** to specify **many alternative blocks of code to be executed**
 
 ```java
 if (condition) {
@@ -114,4 +110,4 @@ System.out.println(cars[0]);
 // Outputs Volvo
 ```
 
-More on Java: <a href="https://www.tutorialspoint.com/java/index.htm"> Click here </a>
+More on Java: [Click here](https://www.tutorialspoint.com/java/index.htm)

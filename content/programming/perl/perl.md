@@ -1,9 +1,5 @@
 ---
-layout: page
 title: Perl Programming
-nav_order: 1
-parent: Programming
-permalink: /docs/programming/perl
 ---
 
 

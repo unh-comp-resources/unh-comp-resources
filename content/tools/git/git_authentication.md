@@ -1,23 +1,16 @@
 ---
-layout: page
 title: GitHub Authentication
-description: Setting up 2FA and PAT with GitHub
-parent: Git
-nav_order: 4
 ---
-GitHub Authentication Basics
-
-Updated June 14, 2021
 
 ## Have Git installed on local machine
 
 ## Set your Git user name for all repositories on your local machine
 
-$ git config --global user.name &quot;mihaelasabin&quot;
+> git config --global user.name &quot;mihaelasabin&quot;
 
 Confirm that your Git user name has been set for all repositories on your local machine
 
-$ git config --global user.name
+> git config --global user.name
 
 ## GitHub authentication
 
@@ -29,11 +22,11 @@ You can avoid being prompted for your password caching your GitHub credentials i
 
 ## Caching your GitHub credentials in Git
 
-If you&#39;re cloning GitHub repositories using HTTPS, you can use a credential helper to tell Git to remember your GiHub credentials.
+If you are cloning GitHub repositories using HTTPS, you can use a credential helper to tell Git to remember your GiHub credentials.
 
 See [https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git) and choose the operating system of your machine: Mac, Windows, or Linux.
 
-We consider below the example of **Linux** or **Linux Subsystem in Window 10** ).
+We consider below the example of **Linux** or **Linux Subsystem in Window 10**.
 
 - Set git to use the memory cache with help from credential.helper. Otherwise, by default, Git caches the password for 15 minutes.
  $ git config --global credential.helper cache

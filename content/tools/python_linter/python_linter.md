@@ -1,9 +1,5 @@
 ---
-layout: page
 title: Linter for Python
-nav_order: 3
-parent: Tools
-permalink: /docs/tools/python_linter
 ---
 
 ## Installation of Python linter on Atom editor (Ubuntu)
