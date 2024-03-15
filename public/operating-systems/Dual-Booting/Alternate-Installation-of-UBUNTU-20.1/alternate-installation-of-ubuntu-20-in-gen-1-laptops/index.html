@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.123.8">
+    <meta name="generator" content="Relearn 5.17.1+tip">
+    <meta name="description" content="">
+    <title>Alternate Installation of UBUNTU 20.1 in Gen 1 laptops :: UNH COMP RESOURCES</title>
+  <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+  <link href="/css/fontawesome-all.min.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/nucleus.css?1709931073" rel="stylesheet">
+  <link href="/css/auto-complete.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/perfect-scrollbar.min.css?1709931073" rel="stylesheet">
+  <link href="/css/fonts.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/theme.css?1709931073" rel="stylesheet">
+  <link href="/css/theme-relearn-dark.css?1709931073" rel="stylesheet" id="variant-style">
+  <link href="/css/variant.css?1709931073" rel="stylesheet">
+  <link href="/css/print.css?1709931073" rel="stylesheet" media="print">
+  <link href="/css/ie.css?1709931073" rel="stylesheet">
+  <script src="/js/url.js?1709931073"></script>
+  <script src="/js/variant.js?1709931073"></script>
+  <script>
+    // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+    // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+    window.index_json_url="/index.json";
+    var root_url="/";
+    var baseUri=root_url.replace(/\/$/, '');
+    // translations
+    window.T_Copy_to_clipboard = 'Copy to clipboard';
+    window.T_Copied_to_clipboard = 'Copied to clipboard!';
+    window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+    window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+    window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+    window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+    // some further base stuff
+    var baseUriFull='localhost:1313/';
+    window.variants && variants.init( [ 'relearn-dark', 'relearn-light' ] );
+  </script>
+  </head>
+  <body class="mobile-support html" data-url="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html" title="Dual Boot System Configuration (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/operating-systems/dual-booting/index.html" title="Dual Booting (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">UNH COMPUTING RESOURCES</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/operating-systems/index.html"><span itemprop="name">Operating Systems</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/operating-systems/dual-booting/index.html"><span itemprop="name">Dual Booting</span></a><meta itemprop="position" content="3"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Alternate Installation of UBUNTU 20.1 in Gen 1 laptops</span><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#installing-ubuntu-201-in-gen-1-laptops">Installing UBUNTU 20.1 in Gen 1 Laptops</a></li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="alternate-installation-of-ubuntu-201-in-gen-1-laptops">Alternate Installation of UBUNTU 20.1 in Gen 1 laptops</h1>
+
+<h2 id="installing-ubuntu-201-in-gen-1-laptops">Installing UBUNTU 20.1 in Gen 1 Laptops</h2>
+<p><strong>Requirements: -</strong></p>
+<ol>
+<li>UBUNTU 20.1 image on USB</li>
+</ol>
+<p><strong>Booting UBUNTU 20.1 on Gen1 Laptop: -</strong></p>
+<p><strong>Step 1: -</strong></p>
+<ul>
+<li>Insert USB into Gen 1 Laptops after installing Windows 10</li>
+<li>Post inserting the USB keep on pressing the F2 button until the below screen appears.</li>
+<li>Select the Boot Sequence option from the settings.</li>
+</ul>
+<p>
+<a href="#image-a771a367edd9d5e5a652d537b4e87b71" class="lightbox-link">
+<img src="https://i.ibb.co/yYxySVK/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-001.jpg" alt="alt" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-a771a367edd9d5e5a652d537b4e87b71">
+<img src="https://i.ibb.co/yYxySVK/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-001.jpg" alt="alt" class="lightbox-image" loading="lazy">
+</a></p>
+<p><strong>Step2:-</strong></p>
+<ul>
+<li>Click on Add Boot Option as shown below in figure</li>
+</ul>
+<p>
+<a href="#image-a6c6ec66c7711e3affc0640fae03ab01" class="lightbox-link">
+<img src="https://i.ibb.co/0yJmwPQ/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-002.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-a6c6ec66c7711e3affc0640fae03ab01">
+<img src="https://i.ibb.co/0yJmwPQ/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-002.jpg" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+<p><strong>Step 3: -</strong></p>
+<ul>
+<li>post click on the boot option the below screen will appear.</li>
+<li>In the window in boot option name enter the name as “GRUB”.</li>
+</ul>
+<p>
+<a href="#image-a0089430c293c163d736633f478297d1" class="lightbox-link">
+<img src="https://i.ibb.co/r01v6Ls/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-003.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-a0089430c293c163d736633f478297d1">
+<img src="https://i.ibb.co/r01v6Ls/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-003.jpg" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+<p><strong>Step 4:-</strong></p>
+<ul>
+<li>Now click on 3 dots beside the filename the below window will appear.</li>
+<li>Now press on the “EFI” option in Directories.</li>
+</ul>
+<p>
+<a href="#image-10d450b741b2a792d5a4295d666ee0a4" class="lightbox-link">
+<img src="https://i.ibb.co/d0CLHt1/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-004.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-10d450b741b2a792d5a4295d666ee0a4">
+<img src="https://i.ibb.co/d0CLHt1/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-004.jpg" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+<p><strong>Step 5:-</strong></p>
+<ul>
+<li>Post selection of EFI in Directories the below screen will appear</li>
+<li>Here there will be some of the files under the ‘FILES’ Section.</li>
+<li>Select the ‘GRUBX64 EFI’ and press ok.</li>
+<li>Make sure the path is present in selection as ‘\EFI\BOOT\GRUBX64.EFI’</li>
+</ul>
+<p>
+<a href="#image-6fd807d8436a95106199d4707731b3d0" class="lightbox-link">
+<img src="https://i.ibb.co/mGkxfyG/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-005.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-6fd807d8436a95106199d4707731b3d0">
+<img src="https://i.ibb.co/mGkxfyG/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-005.jpg" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+<p>
+<a href="#image-e676f713c4b8ebdae2c00f6f3a2a0271" class="lightbox-link">
+<img src="https://i.ibb.co/SKrDm4d/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-006.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-e676f713c4b8ebdae2c00f6f3a2a0271">
+<img src="https://i.ibb.co/SKrDm4d/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-006.jpg" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+<p><strong>Step 6:-</strong></p>
+<ul>
+<li>Now in the Boot Sequence you will be seeing an option called ‘GRUB’.</li>
+<li>Make sure that ‘GRUB’ is checked and click on ‘APPLY’</li>
+</ul>
+<p>
+<a href="#image-73a224180b1171a26f04685305d354e9" class="lightbox-link">
+<img src="https://i.ibb.co/qCfCLyM/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-007.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-73a224180b1171a26f04685305d354e9">
+<img src="https://i.ibb.co/qCfCLyM/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-007.jpg" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+<p><strong>Booting Ubuntu 20.1 onto the Laptop</strong> :</p>
+<ol>
+<li>
+<p>Insert the Ubuntu 20.1 image USB into the laptop and boot the laptop.</p>
+</li>
+<li>
+<p>While booting up the Laptop press F12 continuously until the boot menu appears.</p>
+</li>
+<li>
+<p>From the UEFI boot menu select the GRUB name.</p>
+</li>
+<li>
+<p>Ubuntu installation begins as shown below</p>
+<p>
+<a href="#image-fcdcb8f37e1e782aa49a5376172eca25" class="lightbox-link">
+<img src="https://i.ibb.co/zmT5Pn4/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-008.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-fcdcb8f37e1e782aa49a5376172eca25">
+<img src="https://i.ibb.co/zmT5Pn4/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-008.jpg" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+<li>
+<p>Select the install Ubuntu option from the above menu.</p>
+<p>
+<a href="#image-fab76f48bf94322676c3c017464a3175" class="lightbox-link">
+<img src="https://i.ibb.co/HghhVjV/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-009.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-fab76f48bf94322676c3c017464a3175">
+<img src="https://i.ibb.co/HghhVjV/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-009.jpg" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+<li>
+<p>Select the Language, which is English, and click on continue.</p>
+</li>
+<li>
+<p>Select the Normal installation, Download updates, and Install third-party software and graphic drivers as shown below. And click on continue.</p>
+<p>
+<a href="#image-7480bf2d1157e6c055fb40e0bb5e48b5" class="lightbox-link">
+<img src="https://i.ibb.co/GQS4TZR/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-010.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-7480bf2d1157e6c055fb40e0bb5e48b5">
+<img src="https://i.ibb.co/GQS4TZR/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-010.jpg" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+<li>
+<p>
+<a href="#image-fa1d1cdcd96e318c87b1f96265b62ca2" class="lightbox-link">
+<img src="https://i.ibb.co/qjLYMvy/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-011.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-fa1d1cdcd96e318c87b1f96265b62ca2">
+<img src="https://i.ibb.co/qjLYMvy/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-011.jpg" alt="" class="lightbox-image" loading="lazy">
+</a>
+Select the Installation along with Windows as our goal is to create a dual boot OS. and click on install on</p>
+</li>
+<li>
+<p>Select the time zone and create the user as shown below:</p>
+<p>
+<a href="#image-47c6b58e3c44f052d7ea4e7b8f3058f4" class="lightbox-link">
+<img src="https://i.ibb.co/25JNXg5/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-012.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-47c6b58e3c44f052d7ea4e7b8f3058f4">
+<img src="https://i.ibb.co/25JNXg5/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-012.jpg" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+<p>
+<a href="#image-9b5c35113f9fc379b14f8728d8224b97" class="lightbox-link">
+<img src="https://i.ibb.co/SXK9v8f/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-013.jpg" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-9b5c35113f9fc379b14f8728d8224b97">
+<img src="https://i.ibb.co/SXK9v8f/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-013.jpg" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+<li>
+<p>Once the installation is complete reboot the laptop to see the below Boot menu
+
+<a href="#image-731b6c53b1f327374597331a6ece0b10" class="lightbox-link">
+<img src="https://i.ibb.co/C12Rhhc/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-014.png" alt="" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-731b6c53b1f327374597331a6ece0b10">
+<img src="https://i.ibb.co/C12Rhhc/Aspose-Words-2ef00139-19f9-4034-ab68-61eda56e84a4-014.png" alt="" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+</ol>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+
+
+<style>
+  .image-container {
+    overflow: hidden;
+    width : 250px;  
+    height: 157px;  
+  }
+</style>
+
+<style>
+  img {
+    transform: scale(1);  
+  }
+</style>
+<div class="image-container">
+  <img src="https://www.penbaypilot.com/sites/default/files/2021/06/field/image/centerstackedwhite_rgb_norresized.png" alt="UNH Logo" />
+</div>
+
+<b style="color:#f9f9fc;">UNH COMPUTING RESOIURCES</b>
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1709931073" defer></script>
+        <script src="/js/search.js?1709931073" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics enlarge morespace">
+          <li data-nav-id="/academic-honesty-in-computing/index.html" class=""><a class="padding" href="/academic-honesty-in-computing/index.html">Academic Honesty in Computing</a></li>
+          <li data-nav-id="/classroom-assistants/index.html" class=""><a class="padding" href="/classroom-assistants/index.html">Classroom Assistants</a><ul id="subsections-71e2f08f9f2b77a196397033fe85740c" class="morespace">
+          <li data-nav-id="/classroom-assistants/spring-2024/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2024/index.html">Classroom Assistants - Spring 2024</a></li>
+          <li data-nav-id="/classroom-assistants/fall-2023/index.html" class=""><a class="padding" href="/classroom-assistants/fall-2023/index.html">Classroom Assistants - Fall 2023</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2023/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2023/index.html">Classroom Assistants - Spring 2023</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2022/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2022/index.html">Classroom Assistants - Spring 2022</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2021/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2021/index.html">Classroom Assistants - Spring 2021</a></li>
+          <li data-nav-id="/classroom-assistants/summer-2021/index.html" class=""><a class="padding" href="/classroom-assistants/summer-2021/index.html">Classroom Assistants - Summer 2021</a></li>
+          <li data-nav-id="/classroom-assistants/fall-2021/index.html" class=""><a class="padding" href="/classroom-assistants/fall-2021/index.html">Classroom Assistants - Fall 2021</a></li></ul></li>
+          <li data-nav-id="/github-pages-setup/index.html" class=""><a class="padding" href="/github-pages-setup/index.html">GitHub Pages</a></li>
+          <li data-nav-id="/loan-services/index.html" class=""><a class="padding" href="/loan-services/index.html">Loan Services</a><ul id="subsections-fdd606211f1c84022768c1e9a536275f" class="morespace">
+          <li data-nav-id="/loan-services/students-guide/index.html" class=""><a class="padding" href="/loan-services/students-guide/index.html">Student&#39;s guide to loan an equipment</a></li>
+          <li data-nav-id="/loan-services/covid-return-policy/index.html" class=""><a class="padding" href="/loan-services/covid-return-policy/index.html">Loaned equipment return policy</a></li></ul></li>
+          <li data-nav-id="/operating-systems/index.html" class="parent "><a class="padding" href="/operating-systems/index.html">Operating Systems</a><ul id="subsections-f8c0c88095c0614d0c6bc24e1783ff31" class="morespace">
+          <li data-nav-id="/operating-systems/dual-booting/index.html" class="parent alwaysopen"><a class="padding" href="/operating-systems/dual-booting/index.html">Dual Booting</a><ul id="subsections-a53dd8f553a7206f9d81da8a9ab7554f" class="morespace">
+          <li data-nav-id="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html" class="active"><a class="padding" href="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html">Alternate Installation of UBUNTU 20.1 in Gen 1 laptops</a></li>
+          <li data-nav-id="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html" class=""><a class="padding" href="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html">Dual Boot System Configuration</a></li></ul></li>
+          <li data-nav-id="/operating-systems/ubuntu/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/ubuntu/index.html">Ubuntu</a><ul id="subsections-8a7f5a2f3e74436a22b166bcc8bc9ff5" class="morespace">
+          <li data-nav-id="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html" class=""><a class="padding" href="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html">Creating partition on ubuntu during installation</a></li>
+          <li data-nav-id="/operating-systems/ubuntu/ubuntu-installation-guide/ubuntu-installation-guide/index.html" class=""><a class="padding" href="/operating-systems/ubuntu/ubuntu-installation-guide/ubuntu-installation-guide/index.html">Ubuntu Installation Guide</a></li></ul></li>
+          <li data-nav-id="/operating-systems/windows/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/windows/index.html">Windows</a><ul id="subsections-b568f5b6e397ebeb13a896190d2cd8f8" class="morespace">
+          <li data-nav-id="/operating-systems/windows/windows-partition/windows-partition/index.html" class=""><a class="padding" href="/operating-systems/windows/windows-partition/windows-partition/index.html">Create partition in windows</a></li></ul></li>
+          <li data-nav-id="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html" class=""><a class="padding" href="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html">Windows Linux Subsystem</a></li></ul></li>
+          <li data-nav-id="/programming/index.html" class=""><a class="padding" href="/programming/index.html">Programming</a><ul id="subsections-1842882245211a29a63259b060c6051c" class="morespace">
+          <li data-nav-id="/programming/cpp/index.html" class=""><a class="padding" href="/programming/cpp/index.html">C&#43;&#43;  Programming</a></li>
+          <li data-nav-id="/programming/java/java/index.html" class=""><a class="padding" href="/programming/java/java/index.html">Java Programming</a></li>
+          <li data-nav-id="/programming/java-script/java-script/index.html" class=""><a class="padding" href="/programming/java-script/java-script/index.html">Javascript</a></li>
+          <li data-nav-id="/programming/perl/perl/index.html" class=""><a class="padding" href="/programming/perl/perl/index.html">Perl Programming</a></li>
+          <li data-nav-id="/programming/python/python/index.html" class=""><a class="padding" href="/programming/python/python/index.html">Python Programming</a></li></ul></li>
+          <li data-nav-id="/tools/index.html" class=""><a class="padding" href="/tools/index.html">Tools</a><ul id="subsections-cff67d57e00d6d598d882def3568f700" class="morespace">
+          <li data-nav-id="/tools/git/git_authentication/index.html" class=""><a class="padding" href="/tools/git/git_authentication/index.html">GitHub Authentication</a></li>
+          <li data-nav-id="/tools/python_linter/python_linter/index.html" class=""><a class="padding" href="/tools/python_linter/python_linter/index.html">Linter for Python</a></li>
+          <li data-nav-id="/tools/virtual_environments/index.html" class="alwaysopen"><a class="padding" href="/tools/virtual_environments/index.html">Virtual environments in Python</a><ul id="subsections-24ec8b3b2701aa40e12395869dbd931c" class="morespace">
+          <li data-nav-id="/tools/virtual_environments/conda/index.html" class=""><a class="padding" href="/tools/virtual_environments/conda/index.html">Conda</a></li>
+          <li data-nav-id="/tools/virtual_environments/pipenv/index.html" class=""><a class="padding" href="/tools/virtual_environments/pipenv/index.html">Pipenv</a></li></ul></li></ul></li>
+          <li data-nav-id="/unh-secure-connection/index.html" class=""><a class="padding" href="/unh-secure-connection/index.html">UNH Secure Network</a></li>
+        </ul>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html" selected></option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter">
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1709931073" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1709931073" defer></script>
+    <script src="/js/theme.js?1709931073" defer></script>
+  </body>
+</html>

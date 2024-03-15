@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.123.8">
+    <meta name="generator" content="Relearn 5.17.1+tip">
+    <meta name="description" content="">
+    <title>GitHub Pages :: UNH COMP RESOURCES</title>
+  <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+  <link href="/css/fontawesome-all.min.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/nucleus.css?1709931073" rel="stylesheet">
+  <link href="/css/auto-complete.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/perfect-scrollbar.min.css?1709931073" rel="stylesheet">
+  <link href="/css/fonts.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/theme.css?1709931073" rel="stylesheet">
+  <link href="/css/theme-relearn-dark.css?1709931073" rel="stylesheet" id="variant-style">
+  <link href="/css/variant.css?1709931073" rel="stylesheet">
+  <link href="/css/print.css?1709931073" rel="stylesheet" media="print">
+  <link href="/css/ie.css?1709931073" rel="stylesheet">
+  <script src="/js/url.js?1709931073"></script>
+  <script src="/js/variant.js?1709931073"></script>
+  <script>
+    // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+    // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+    window.index_json_url="/index.json";
+    var root_url="/";
+    var baseUri=root_url.replace(/\/$/, '');
+    // translations
+    window.T_Copy_to_clipboard = 'Copy to clipboard';
+    window.T_Copied_to_clipboard = 'Copied to clipboard!';
+    window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+    window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+    window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+    window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+    // some further base stuff
+    var baseUriFull='localhost:1313/';
+    window.variants && variants.init( [ 'relearn-dark', 'relearn-light' ] );
+  </script>
+  </head>
+  <body class="mobile-support html" data-url="/github-pages-setup/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/loan-services/index.html" title="Loan Services (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/classroom-assistants/fall-2021/index.html" title="Classroom Assistants - Fall 2021 (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">UNH COMPUTING RESOURCES</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">GitHub Pages</span><meta itemprop="position" content="2"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#understanding-the-virtual-environment">Understanding the virtual environment</a></li>
+        <li><a href="#what-is-jekyll-and-why-use-jekyll">What is Jekyll and why use Jekyll?</a></li>
+        <li><a href="#what-is-a-ruby-gem">What is a Ruby Gem?</a></li>
+        <li><a href="#ruby-virtual-environment">Ruby virtual environment</a></li>
+        <li><a href="#activating-the-ruby-virtual-environment">Activating the Ruby virtual environment</a></li>
+        <li><a href="#virtual-environment-deactivation-mechanism">Virtual environment deactivation mechanism</a></li>
+        <li><a href="#what-is-a-bundler">what is a Bundler?</a></li>
+      </ul>
+    </li>
+    <li><a href="#github-pages-setup-on-ubuntu">GitHub pages Setup on Ubuntu</a>
+      <ul>
+        <li><a href="#1-installing-ruby">1. Installing ruby</a></li>
+        <li><a href="#2-installing-bundler">2. Installing Bundler</a></li>
+        <li><a href="#3-installing-the-github-pages-gem">3. Installing the github-pages gem</a></li>
+        <li><a href="#4-testing-your-site-locally">4. Testing your site locally</a></li>
+      </ul>
+    </li>
+    <li><a href="#github-pages-windows-setup">Github Pages windows setup:</a>
+      <ul>
+        <li><a href="#installing-ruby-with-devkit">Installing Ruby (With Devkit)</a></li>
+        <li><a href="#install-the-necessary-rubygems">Install the necessary rubygems</a></li>
+        <li><a href="#testing-your-site-locally">Testing your site locally</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="github-pages">GitHub Pages</h1>
+
+<p>To test your site locally, you&rsquo;ll need</p>
+<ul>
+<li><a href="https://www.ruby-lang.org/en/" target="_blank">Ruby</a></li>
+<li><a href="https://github.com/bundler/bundler" target="_blank">Bundler</a></li>
+<li><a href="https://github.com/github/pages-gem" target="_blank">GitHub pages gem</a></li>
+</ul>
+<h3 id="understanding-the-virtual-environment">Understanding the virtual environment</h3>
+<p>It is an isolated environment separate from other projects. Virtual Environments keep dependencies separated by project and because of that, they allow you to use different versions of Python or third-party libraries in each project you work on.</p>
+<h3 id="what-is-jekyll-and-why-use-jekyll">What is Jekyll and why use Jekyll?</h3>
+<p>GitHub Pages are public web pages for users, organizations, and repositories,that are freely hosted on GitHub’s github.io domain or on a custom domain name of your choice. GitHub Pages are powered by Jekyll behind the scenes,so they are a great way to host your Jekyll-powered website for free. Jekyll is a Ruby Gem, Jekyll is written in Ruby, it is a static site generator.
+For Example, you write your content in the text editor and it gets converted into a website using Jekyll. So, no prior CSS knowledge is required, just focus on the content.</p>
+<p>Advantages of using Jekyll:</p>
+<ul>
+<li>Simplicity: You use Markdown its efficient and easy and beautiful.</li>
+<li>Speed: Pages are pre-rendered html pages, so no requests going back and forth for you, just html pages, which makes it very fast</li>
+<li>Secure: While only html pages make you site loads really fast, it’s also really secure, as there is no php code to look for error to or something that a hacker could use and  there is even no database to hack in the first place!</li>
+</ul>
+<h3 id="what-is-a-ruby-gem">What is a Ruby Gem?</h3>
+<p>A Ruby gem is a package of code, configured so that it complies with the Ruby style of software distribution. There are many Gems available, covering a large range of useful packages. Gems can be downloaded manually and added to the Gem file of your app, or you can use the Bundler tool to do that for you.
+For understanding, think of it as a plugin or code already made for you to use. Imagine you need to build a login form in your website, there is already some code existing in a file (gem), we must replace the content with the content we need. For this, we can create our own gems or use the ones already existing.  You can find the list of gems in (<a href="https://rubygems.org/" target="_blank">https://rubygems.org/</a>) website.</p>
+<h3 id="ruby-virtual-environment">Ruby virtual environment</h3>
+<p>A local, mutable, deployment directory for the execution environment that is independent of the global (system) environment. With Ruby, this is accomplished with the rbenv utility and these rbenv plugins: rbenv-gem-rehash, rbenv-gemset, ruby-build.
+RVM and rbenv?
+Both RVM and rbenv are Ruby version management tool. RVM is used to manage and install different versions of Ruby and gemsets on system where Rbenv is a lightweight Ruby version management tool.
+The best way to install and manage multiple side-by-side installations of Ruby is to use the Ruby virtual environment manager rbenv.</p>
+<h3 id="activating-the-ruby-virtual-environment">Activating the Ruby virtual environment</h3>
+<p>Switching an execution context to use the local deployment directory preferentially ahead of the global environment or masking the global environment. With Ruby virtual environments, this is accomplished using the rbenv local command to set a .ruby-version file in the project root folder, and a .ruby-gemsets file in the project root directing the location of gems to a .gems file, also in the project root.</p>
+<p><em><strong>Note</strong></em> : Unlike python virtual environment activation this does not change the prompt to indicate the Ruby Virtual environment is active.</p>
+<h3 id="virtual-environment-deactivation-mechanism">Virtual environment deactivation mechanism</h3>
+<p>For standing down a virtual environment i.e., for switching the execution context back to using the global environment and ignoring the deployment directory.
+This is accomplished using the rbenv local &ndash;unset command, which removes the. ruby-version file in the project root.</p>
+<p><em><strong>Note</strong></em> : This doesn’t fully deactivate the virtual environment. If the working directory is within the project or application directory tree, then the .rbenv-gemsets file will still affect any gem install command.</p>
+<h3 id="what-is-a-bundler">what is a Bundler?</h3>
+<ul>
+<li>With rbenv-gemsets keeping gem installations within the project tree, there still needs to be a way to declare the gems required by the project and the gem versions required. </li>
+<li>Bundler uses a text file called Gemfile to control which gems, and which versions, get installed for a project—much in the same way that a requirements.txt file controls Python packages with pip in a Python virtual environment.</li>
+<li>Firstly, Bundler needs to be installed to use it. You can either install it in a project specific gemset, or you can install it into the Ruby installation directory.</li>
+</ul>
+<h2 id="github-pages-setup-on-ubuntu">GitHub pages Setup on Ubuntu</h2>
+<h3 id="1-installing-ruby">1. Installing ruby</h3>
+<p>Install ruby using <a href="https://github.com/rbenv/rbenv#readme" target="_blank">rbenv</a> and <a href="https://github.com/rbenv/ruby-build" target="_blank">ruby-build</a> according to their docs:</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>cd $HOME
+sudo apt-get update
+sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo &#39;export PATH=&#34;$HOME/.rbenv/bin:$PATH&#34;&#39; &gt;&gt; ~/.bashrc
+echo &#39;eval &#34;$(rbenv init -)&#34;&#39; &gt;&gt; ~/.bashrc
+exec $SHELL
+
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo &#39;export PATH=&#34;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&#34;&#39; &gt;&gt; ~/.bashrc
+exec $SHELL
+
+rbenv install 2.3.1
+rbenv global 2.3.1
+ruby -v</code></pre></div><h3 id="2-installing-bundler">2. Installing Bundler</h3>
+<p>Run the following commands:</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>gem install bundler
+rbenv rehash</code></pre></div><h3 id="3-installing-the-github-pages-gem">3. Installing the github-pages gem</h3>
+<p>Run the following command:</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>gem install github-pages</code></pre></div><p>This will install the <code>github-pages</code> gem and all dependencies
+(including <a href="https://jekyllrb.com/" target="_blank">jekyll</a>).</p>
+<h3 id="4-testing-your-site-locally">4. Testing your site locally</h3>
+<p>To construct and test your site locally, go into the project directory and
+execute command:</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>bundle exec jekyll serve</code></pre></div><p>Install any missing gems using:</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>bundle install</code></pre></div><p>This will create (or modify) a <code>_site/</code> directory, containing
+everything from <code>assets/</code>, and then the <code>index.md</code> and all
+<code>pages/*.md</code> files, converted to html. (So there&rsquo;ll be
+<code>_site/index.html</code> and the various <code>_site/pages/*.html</code>.)</p>
+<p>Now open your browser and go to <a href="http://localhost:4000" target="_blank">http://localhost:4000</a></p>
+<h2 id="github-pages-windows-setup">Github Pages windows setup:</h2>
+<h3 id="installing-ruby-with-devkit">Installing Ruby (With Devkit)</h3>
+<p>Start by downloading the latest version of ruby installer with devkit from <a href="https://rubyinstaller.org/downloads/" target="_blank">here</a></p>
+<p>Run the installer, and select &ldquo;MSYS2&rdquo; in the installation options.</p>
+<pre><code>- This will open a command window on completion, install option 3.
+    (MSYS2 and MINGW development toolchain.)
+</code></pre>
+<h3 id="install-the-necessary-rubygems">Install the necessary rubygems</h3>
+<ol start="3">
+<li>
+<p>Navigate to the GitHub Pages repository from your windows command line,</p>
+<ul>
+<li>use the command <code>gem install bundler</code></li>
+</ul>
+</li>
+<li>
+<p>Install the github pages gem</p>
+<p><code>gem install github-pages</code></p>
+</li>
+</ol>
+<h3 id="testing-your-site-locally">Testing your site locally</h3>
+<p>To construct and test your site locally, go into the project directory and
+execute command:</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>bundle exec jekyll serve</code></pre></div><p>Install any missing gems using:</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>bundle install</code></pre></div><p>This will create (or modify) a <code>_site/</code> directory, containing
+everything from <code>assets/</code>, and then the <code>index.md</code> and all
+<code>pages/*.md</code> files, converted to html. (So there&rsquo;ll be
+<code>_site/index.html</code> and the various <code>_site/pages/*.html</code>.)</p>
+<p>Now open your browser and go to <a href="http://localhost:4000" target="_blank">http://localhost:4000</a></p>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+
+
+<style>
+  .image-container {
+    overflow: hidden;
+    width : 250px;  
+    height: 157px;  
+  }
+</style>
+
+<style>
+  img {
+    transform: scale(1);  
+  }
+</style>
+<div class="image-container">
+  <img src="https://www.penbaypilot.com/sites/default/files/2021/06/field/image/centerstackedwhite_rgb_norresized.png" alt="UNH Logo" />
+</div>
+
+<b style="color:#f9f9fc;">UNH COMPUTING RESOIURCES</b>
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1709931073" defer></script>
+        <script src="/js/search.js?1709931073" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics enlarge morespace">
+          <li data-nav-id="/academic-honesty-in-computing/index.html" class=""><a class="padding" href="/academic-honesty-in-computing/index.html">Academic Honesty in Computing</a></li>
+          <li data-nav-id="/classroom-assistants/index.html" class=""><a class="padding" href="/classroom-assistants/index.html">Classroom Assistants</a><ul id="subsections-71e2f08f9f2b77a196397033fe85740c" class="morespace">
+          <li data-nav-id="/classroom-assistants/spring-2024/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2024/index.html">Classroom Assistants - Spring 2024</a></li>
+          <li data-nav-id="/classroom-assistants/fall-2023/index.html" class=""><a class="padding" href="/classroom-assistants/fall-2023/index.html">Classroom Assistants - Fall 2023</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2023/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2023/index.html">Classroom Assistants - Spring 2023</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2022/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2022/index.html">Classroom Assistants - Spring 2022</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2021/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2021/index.html">Classroom Assistants - Spring 2021</a></li>
+          <li data-nav-id="/classroom-assistants/summer-2021/index.html" class=""><a class="padding" href="/classroom-assistants/summer-2021/index.html">Classroom Assistants - Summer 2021</a></li>
+          <li data-nav-id="/classroom-assistants/fall-2021/index.html" class=""><a class="padding" href="/classroom-assistants/fall-2021/index.html">Classroom Assistants - Fall 2021</a></li></ul></li>
+          <li data-nav-id="/github-pages-setup/index.html" class="active"><a class="padding" href="/github-pages-setup/index.html">GitHub Pages</a></li>
+          <li data-nav-id="/loan-services/index.html" class=""><a class="padding" href="/loan-services/index.html">Loan Services</a><ul id="subsections-fdd606211f1c84022768c1e9a536275f" class="morespace">
+          <li data-nav-id="/loan-services/students-guide/index.html" class=""><a class="padding" href="/loan-services/students-guide/index.html">Student&#39;s guide to loan an equipment</a></li>
+          <li data-nav-id="/loan-services/covid-return-policy/index.html" class=""><a class="padding" href="/loan-services/covid-return-policy/index.html">Loaned equipment return policy</a></li></ul></li>
+          <li data-nav-id="/operating-systems/index.html" class=""><a class="padding" href="/operating-systems/index.html">Operating Systems</a><ul id="subsections-f8c0c88095c0614d0c6bc24e1783ff31" class="morespace">
+          <li data-nav-id="/operating-systems/dual-booting/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/dual-booting/index.html">Dual Booting</a><ul id="subsections-a53dd8f553a7206f9d81da8a9ab7554f" class="morespace">
+          <li data-nav-id="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html" class=""><a class="padding" href="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html">Alternate Installation of UBUNTU 20.1 in Gen 1 laptops</a></li>
+          <li data-nav-id="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html" class=""><a class="padding" href="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html">Dual Boot System Configuration</a></li></ul></li>
+          <li data-nav-id="/operating-systems/ubuntu/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/ubuntu/index.html">Ubuntu</a><ul id="subsections-8a7f5a2f3e74436a22b166bcc8bc9ff5" class="morespace">
+          <li data-nav-id="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html" class=""><a class="padding" href="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html">Creating partition on ubuntu during installation</a></li>
+          <li data-nav-id="/operating-systems/ubuntu/ubuntu-installation-guide/ubuntu-installation-guide/index.html" class=""><a class="padding" href="/operating-systems/ubuntu/ubuntu-installation-guide/ubuntu-installation-guide/index.html">Ubuntu Installation Guide</a></li></ul></li>
+          <li data-nav-id="/operating-systems/windows/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/windows/index.html">Windows</a><ul id="subsections-b568f5b6e397ebeb13a896190d2cd8f8" class="morespace">
+          <li data-nav-id="/operating-systems/windows/windows-partition/windows-partition/index.html" class=""><a class="padding" href="/operating-systems/windows/windows-partition/windows-partition/index.html">Create partition in windows</a></li></ul></li>
+          <li data-nav-id="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html" class=""><a class="padding" href="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html">Windows Linux Subsystem</a></li></ul></li>
+          <li data-nav-id="/programming/index.html" class=""><a class="padding" href="/programming/index.html">Programming</a><ul id="subsections-1842882245211a29a63259b060c6051c" class="morespace">
+          <li data-nav-id="/programming/cpp/index.html" class=""><a class="padding" href="/programming/cpp/index.html">C&#43;&#43;  Programming</a></li>
+          <li data-nav-id="/programming/java/java/index.html" class=""><a class="padding" href="/programming/java/java/index.html">Java Programming</a></li>
+          <li data-nav-id="/programming/java-script/java-script/index.html" class=""><a class="padding" href="/programming/java-script/java-script/index.html">Javascript</a></li>
+          <li data-nav-id="/programming/perl/perl/index.html" class=""><a class="padding" href="/programming/perl/perl/index.html">Perl Programming</a></li>
+          <li data-nav-id="/programming/python/python/index.html" class=""><a class="padding" href="/programming/python/python/index.html">Python Programming</a></li></ul></li>
+          <li data-nav-id="/tools/index.html" class=""><a class="padding" href="/tools/index.html">Tools</a><ul id="subsections-cff67d57e00d6d598d882def3568f700" class="morespace">
+          <li data-nav-id="/tools/git/git_authentication/index.html" class=""><a class="padding" href="/tools/git/git_authentication/index.html">GitHub Authentication</a></li>
+          <li data-nav-id="/tools/python_linter/python_linter/index.html" class=""><a class="padding" href="/tools/python_linter/python_linter/index.html">Linter for Python</a></li>
+          <li data-nav-id="/tools/virtual_environments/index.html" class="alwaysopen"><a class="padding" href="/tools/virtual_environments/index.html">Virtual environments in Python</a><ul id="subsections-24ec8b3b2701aa40e12395869dbd931c" class="morespace">
+          <li data-nav-id="/tools/virtual_environments/conda/index.html" class=""><a class="padding" href="/tools/virtual_environments/conda/index.html">Conda</a></li>
+          <li data-nav-id="/tools/virtual_environments/pipenv/index.html" class=""><a class="padding" href="/tools/virtual_environments/pipenv/index.html">Pipenv</a></li></ul></li></ul></li>
+          <li data-nav-id="/unh-secure-connection/index.html" class=""><a class="padding" href="/unh-secure-connection/index.html">UNH Secure Network</a></li>
+        </ul>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/github-pages-setup/index.html" selected></option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter">
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1709931073" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1709931073" defer></script>
+    <script src="/js/theme.js?1709931073" defer></script>
+  </body>
+</html>

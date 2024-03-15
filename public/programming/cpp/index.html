@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.123.8">
+    <meta name="generator" content="Relearn 5.17.1+tip">
+    <meta name="description" content="">
+    <title>C&#43;&#43;  Programming :: UNH COMP RESOURCES</title>
+  <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+  <link href="/css/fontawesome-all.min.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/nucleus.css?1709931073" rel="stylesheet">
+  <link href="/css/auto-complete.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/perfect-scrollbar.min.css?1709931073" rel="stylesheet">
+  <link href="/css/fonts.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/theme.css?1709931073" rel="stylesheet">
+  <link href="/css/theme-relearn-dark.css?1709931073" rel="stylesheet" id="variant-style">
+  <link href="/css/variant.css?1709931073" rel="stylesheet">
+  <link href="/css/print.css?1709931073" rel="stylesheet" media="print">
+  <link href="/css/ie.css?1709931073" rel="stylesheet">
+  <script src="/js/url.js?1709931073"></script>
+  <script src="/js/variant.js?1709931073"></script>
+  <script>
+    // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+    // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+    window.index_json_url="/index.json";
+    var root_url="/";
+    var baseUri=root_url.replace(/\/$/, '');
+    // translations
+    window.T_Copy_to_clipboard = 'Copy to clipboard';
+    window.T_Copied_to_clipboard = 'Copied to clipboard!';
+    window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+    window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+    window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+    window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+    // some further base stuff
+    var baseUriFull='localhost:1313/';
+    window.variants && variants.init( [ 'relearn-dark', 'relearn-light' ] );
+  </script>
+  </head>
+  <body class="mobile-support html" data-url="/programming/cpp/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/programming/java/java/index.html" title="Java Programming (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/programming/index.html" title="Programming (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">UNH COMPUTING RESOURCES</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/programming/index.html"><span itemprop="name">Programming</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">C&#43;&#43;  Programming</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#about">About</a>
+      <ul>
+        <li><a href="#setting-up-c-development-environment-click-herehttpswwwgeeksforgeeksorgsetting-c-development-environment">Setting up C++ Development Environment: <a href="https://www.geeksforgeeks.org/setting-c-development-environment/">Click here</a></a></li>
+        <li><a href="#data-types">Data Types</a></li>
+        <li><a href="#functions">Functions:</a></li>
+        <li><a href="#arrays">Arrays</a></li>
+        <li><a href="#strings">Strings</a></li>
+        <li><a href="#pointers">Pointers</a></li>
+      </ul>
+    </li>
+    <li><a href="#loops">Loops</a>
+      <ul>
+        <li><a href="#while-loop">While loop</a></li>
+        <li><a href="#for-loop">For loop</a></li>
+        <li><a href="#dowhile-loop">Do&hellip;While loop</a></li>
+        <li><a href="#nested-loops">Nested Loops:</a></li>
+        <li><a href="#break">Break</a></li>
+        <li><a href="#continue">Continue</a></li>
+        <li><a href="#goto">Goto</a></li>
+        <li><a href="#working-with-files">Working with files</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="c--programming">C&#43;&#43;  Programming</h1>
+
+<h2 id="about">About</h2>
+<p>C++ is a middle-level language rendering it the advantage of programming low-level (drivers, kernels) and even higher-level applications (games, GUI, desktop apps etc.). The basic syntax and code structure of both C and C++ are the same.</p>
+<p>Some of the <strong>features &amp; key-points</strong> to note about the programming language are as follows:</p>
+<ul>
+<li><strong>Simple</strong>: It is a simple language in the sense that programs can be broken down into logical units and parts, has a rich libray support and a variety of data-types.</li>
+<li><strong>Machine Independent but Platform Dependent</strong>: A C++ executable is not platform-independent (compiled programs on Linux won’t run on Windows), however they are machine independent.</li>
+<li><strong>Mid-level language</strong>: It is a mid-level language as we can do both systems-programming (drivers, kernels, networking etc.) and build large-scale user applications (Media Players, Photoshop, Game Engines etc.)</li>
+<li><strong>Rich library support</strong>: Has a rich library support (Both standard ~ built-in data structures, algorithms etc.) as well 3rd party libraries (e.g. Boost libraries) for fast and rapid development.</li>
+<li><strong>Speed of execution</strong>: C++ programs excel in execution speed. Since, it is a compiled language, and also hugely procedural. Newer languages have extra in-built default features such as grabage-collection, dynamic typing etc. which slow the execution of the program overall. Since there is no additional processing overhead like this in C++, it is blazing fast.</li>
+<li><strong>Pointer and direct Memory-Access</strong>: C++ provides pointer support which aids users to directly manipulate storage address. This helps in doing low-level programming (where one might need to have explicit control on the storage of variables).</li>
+<li><strong>Object-Oriented</strong>: One of the strongest points of the language which sets it apart from C. Object-Oriented support helps C++ to make maintainable and extensible programs. i.e. Large-scale applications ca be built. Procedural code becomes difficult to maintain as code-size grows.</li>
+<li><strong>Compiled Language</strong>: C++ is a compiled language, contributing to its speed.</li>
+</ul>
+<h3 :target="_blank" id="setting-up-c-development-environment-click-herehttpswwwgeeksforgeeksorgsetting-c-development-environment">Setting up C++ Development Environment: <a href="https://www.geeksforgeeks.org/setting-c-development-environment/" target="_blank">Click here</a></h3>
+<h3 id="data-types">Data Types</h3>
+<p>Data types in C++ is mainly divided into three types:</p>
+<ol>
+<li><strong>Primitive Data Types</strong>: These data types are built-in or predefined data types and can be used directly by the user to declare variables. example: int, char , float, bool etc. Primitive data types available in C++ are:</li>
+</ol>
+<ul>
+<li><strong>Integer</strong>: Keyword used for integer data types is int. Integers typically requires 4 bytes of memory space and ranges from -2147483648 to 2147483647.</li>
+<li><strong>Character</strong>: Character data type is used for storing characters. Keyword used for character data type is char. Characters typically requires 1 byte of memory space and ranges from -128 to 127 or 0 to 255.</li>
+<li><strong>Boolean</strong>: Boolean data type is used for storing boolean or logical values. A boolean variable can store either true or false. Keyword used for boolean data type is bool.</li>
+<li><strong>Floating Point</strong>: Floating Point data type is used for storing single precision floating point values or decimal values. Keyword used for floating point data type is float. Float variables typically requires 4 byte of memory space.</li>
+<li><strong>Double Floating Point</strong>: Double Floating Point data type is used for storing double precision floating point values or decimal values. Keyword used for double floating point data type is double. Double variables typically requires 8 byte of memory space.</li>
+<li><strong>void</strong>: Void means without any value. void datatype represents a valueless entity. Void data type is used for those function which does not returns a value.</li>
+<li><strong>Wide Character</strong>: Wide character data type is also a character data type but this data type has size greater than the normal 8-bit datatype. Represented by wchar_t. It is generally 2 or 4 bytes long.</li>
+</ul>
+<ol start="2">
+<li><strong>Derived Data Types</strong>: The data-types that are derived from the primitive or built-in datatypes are referred to as Derived Data Types. These can be of four types namely:</li>
+</ol>
+<ul>
+<li><strong>Function</strong>: A function is a block of code or program-segment that is defined to perform a specific well-defined task. A function is generally defined to save the user from writing the same lines of code again and again for the same input. All the lines of code are put together inside a single function and this can be called anywhere required. main() is a default function that is defined in every program of C++.</li>
+<li><strong>Array</strong>: An array is a collection of items stored at continuous memory locations. The idea of array is to represent many instances in one variable.</li>
+<li><strong>Pointer</strong>: Pointers are symbolic representation of addresses. They enable programs to simulate call-by-reference as well as to create and manipulate dynamic data structures.</li>
+<li><strong>Reference</strong>: When a variable is declared as reference, it becomes an alternative name for an existing variable. A variable can be declared as reference by putting ‘&amp;’ in the declaration.</li>
+</ul>
+<ol start="3">
+<li><strong>Abstract or User-Defined Data Types</strong>: These data types are defined by user itself. Like, defining a class in C++ or a structure. C++ provides the following user-defined datatypes:</li>
+</ol>
+<ul>
+<li><strong>Class</strong>: The building block of C++ that leads to Object-Oriented programming is a Class. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A class is like a blueprint for an object.</li>
+<li><strong>Structure</strong>: A structure is a user defined data type in C/C++. A structure creates a data type that can be used to group items of possibly different types into a single type.</li>
+<li><strong>Union</strong>: Like Structures, union is a user defined data type. In union, all members share the same memory location. For example in the following C program, both x and y share the same location. If we change x, we can see the changes being reflected in y.</li>
+<li><strong>Enumeration</strong>: Enumeration (or enum) is a user defined data type in C. It is mainly used to assign names to integral constants, the names make a program easy to read and maintain.</li>
+<li><strong>Typedef defined DataType</strong>: C++ allows you to define explicitly new data type names by using the keyword typedef. Using typedef does not actually create a new data class, rather it defines a name for an existing type. This can increase the portability(the ability of a program to be used across different types of machines; i.e., mini, mainframe, micro, etc; without much changes into the code)of a program as only the typedef statements would have to be changed. Using typedef one can also aid in self-documenting code by allowing descriptive names for the standard data types.</li>
+</ul>
+<h3 id="functions">Functions:</h3>
+<p>A function is a set of statements that take inputs, do some specific computation and produces output. The idea is to put some commonly or repeatedly done task together and make a function so that instead of writing the same code again and again for different inputs, we can call the function. A function declaration tells the compiler about the number of parameters function takes, data-types of parameters and return type of function. Putting parameter names in function declaration is optional in the function declaration, but it is necessary to put them in the definition. Below are an example of function declarations. (parameter names are not there in below declarations)</p>
+<p>
+<a href="#image-b4be55d4dc47182c7a055fb4c62b4e92" class="lightbox-link">
+<img src="functions.png" alt="Functions" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-b4be55d4dc47182c7a055fb4c62b4e92">
+<img src="functions.png" alt="Functions" class="lightbox-image" loading="lazy">
+</a></p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">// A function that takes two integers as parameters 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// and returns an integer 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">max</span>(<span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">int</span>); 
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// A function that takes a int pointer and an int variable as parameters 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// and returns an pointer of type int 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">swap</span>(<span style="color:#66d9ef">int</span><span style="color:#f92672">*</span>,<span style="color:#66d9ef">int</span>); 
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// A function that takes a charas parameters 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// and returns an reference variable 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">call</span>(<span style="color:#66d9ef">char</span> b); 
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// A function that takes a char and an int as parameters 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// and returns an integer 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">fun</span>(<span style="color:#66d9ef">char</span>, <span style="color:#66d9ef">int</span>); 
+</span></span></code></pre></div><h3 id="arrays">Arrays</h3>
+<p>An array in C or C++ is a collection of items stored at contiguous memory locations and elements can be accessed randomly using indices of an array. They are used to store similar type of elements as in the data type must be the same for all elements. They can be used to store collection of primitive data types such as int, float, double, char, etc of any particular type.</p>
+<p>
+<a href="#image-8857fcc1c0e47bc15bbe1f310d624269" class="lightbox-link">
+<img src="arrays.png" alt="Arrays" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-8857fcc1c0e47bc15bbe1f310d624269">
+<img src="arrays.png" alt="Arrays" class="lightbox-image" loading="lazy">
+</a></p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> arr1[<span style="color:#ae81ff">10</span>];
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// With recent C/C++ versions, we can also 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// declare an array of user specified size 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>; 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> arr2[n]; 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Array declaration by initializing elements 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> arr[] <span style="color:#f92672">=</span> { <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span> } 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Compiler creates an array of size 4. 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// above is same as  &#34;int arr[4] = {10, 20, 30, 40}&#34; 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Array declaration by specifying size and initializing 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// elements 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> arr[<span style="color:#ae81ff">6</span>] <span style="color:#f92672">=</span> { <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span> }
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Compiler creates an array of size 6, initializes first 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// 4 elements as specified by user and rest two elements as 0. 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// above is same as  &#34;int arr[] = {10, 20, 30, 40, 0, 0}&#34; 
+</span></span></span></code></pre></div><h3 id="strings">Strings</h3>
+<p>Strings in C++ are used to store text or sequence of characters. In C++ strings can be stored in one of the two following ways:</p>
+<ul>
+<li><strong>C style string</strong>: In C, strings are defined as an array of characters. The difference between a character array and a string is the string is terminated with a special character ‘\0’. In C, the string is actually represented as an array of characters terminated by a null string. Therefore the size of the character array is always one more than that of the number of characters in the actual string. This thing continues to be supported in C++ too. The C++ compiler automatically sets “\0” at the end of the string, during initialization of the array.</li>
+</ul>
+<div class="wrap-code highlight"><pre tabindex="0"><code>char str[] = &#34;Geeks&#34;;
+char str[6] = &#34;Geeks&#34;;
+char str[] = {&#39;G&#39;, &#39;e&#39;, &#39;e&#39;, &#39;k&#39;, &#39;s&#39;, &#39;\0&#39;};
+char str[6] = {&#39;G&#39;, &#39;e&#39;, &#39;e&#39;, &#39;k&#39;, &#39;s&#39;, &#39;\0&#39;};</code></pre></div><ul>
+<li><strong>String class</strong>: In C++, one can directly store the collection of characters or text in a string variable, surrounded by double-quotes. C++ provides string class, which supports various operations like copying strings, concatenating strings etc.</li>
+</ul>
+<div class="wrap-code highlight"><pre tabindex="0"><code>string str1 = &#34;Geeks&#34;;
+string str2 = &#34;Welcome to GeeksforGeeks!&#34;;</code></pre></div><h3 id="pointers">Pointers</h3>
+<p>Pointers are symbolic representation of addresses. They enable programs to simulate call-by-reference as well as to create and manipulate dynamic data structures. It’s general declaration in C/C++ has the format:</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>datatype *var_name; 
+int *ptr;   //ptr can point to an address which holds int data</code></pre></div><h2 id="loops">Loops</h2>
+<h3 id="while-loop">While loop</h3>
+<p>A while loop statement repeatedly executes a target statement as long as a given condition is true.</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>while(condition) {
+   statement(s);
+}</code></pre></div><p>Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any non-zero value. The loop iterates while the condition is true.</p>
+<h3 id="for-loop">For loop</h3>
+<p>A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times.</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>for ( init; condition; increment ) {
+   statement(s);
+}</code></pre></div><p>Here is the flow of control in a for loop −</p>
+<ul>
+<li>
+<p>The init step is executed first, and only once. This step allows you to declare and initialize any loop control variables. You are not required to put a statement here, as long as a semicolon appears.</p>
+</li>
+<li>
+<p>Next, the condition is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop does not execute and flow of control jumps to the next statement just after the for loop.</p>
+</li>
+<li>
+<p>After the body of the for loop executes, the flow of control jumps back up to the increment statement. This statement can be left blank, as long as a semicolon appears after the condition.</p>
+</li>
+<li>
+<p>The condition is now evaluated again. If it is true, the loop executes and the process repeats itself (body of loop, then increment step, and then again condition). After the condition becomes false, the for loop terminates.</p>
+</li>
+</ul>
+<h3 id="dowhile-loop">Do&hellip;While loop</h3>
+<p>Unlike for and while loops, which test the loop condition at the top of the loop, the do&hellip;while loop checks its condition at the bottom of the loop. A do&hellip;while loop is similar to a while loop, except that a do&hellip;while loop is guaranteed to execute at least one time.</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>do {
+   statement(s);
+} 
+while( condition );</code></pre></div><p>Notice that the conditional expression appears at the end of the loop, so the statement(s) in the loop execute once before the condition is tested. If the condition is true, the flow of control jumps back up to do, and the statement(s) in the loop execute again. This process repeats until the given condition becomes false.</p>
+<h3 id="nested-loops">Nested Loops:</h3>
+<p>A loop can be nested inside of another loop. C++ allows at least 256 levels of nesting.
+The syntax for a nested for loop statement in C++ is as follows</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>for ( init; condition; increment ) {
+   for ( init; condition; increment ) {
+      statement(s);
+   }
+   statement(s); // you can put more statements.
+}</code></pre></div><p>The syntax for a nested while loop statement in C++ is as follows</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>while(condition) {
+   while(condition) {
+      statement(s);
+   }
+   statement(s); // you can put more statements.
+}</code></pre></div><p>The syntax for a nested do&hellip;while loop statement in C++ is as follows</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>do {
+   statement(s); // you can put more statements.
+   do {
+      statement(s);
+   } while( condition );
+
+} while( condition );</code></pre></div><h3 id="break">Break</h3>
+<p>The break statement has the following two usages in C++</p>
+<ul>
+<li>
+<p>When the break statement is encountered inside a loop, the loop is immediately terminated and program control resumes at the next statement following the loop.</p>
+</li>
+<li>
+<p>It can be used to terminate a case in the switch statement (covered in the next chapter).</p>
+</li>
+</ul>
+<p>If you are using nested loops (i.e., one loop inside another loop), the break statement will stop the execution of the innermost loop and start executing the next line of code after the block.</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>break;</code></pre></div><h3 id="continue">Continue</h3>
+<p>The continue statement works somewhat like the break statement. Instead of forcing termination, however, continue forces the next iteration of the loop to take place, skipping any code in between.</p>
+<p>For the for loop, continue causes the conditional test and increment portions of the loop to execute. For the while and do&hellip;while loops, program control passes to the conditional tests.</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>continue;</code></pre></div><h3 id="goto">Goto</h3>
+<p>A goto statement provides an unconditional jump from the goto to a labeled statement in the same function.</p>
+<p>NOTE − Use of goto statement is highly discouraged because it makes difficult to trace the control flow of a program, making the program hard to understand and hard to modify. Any program that uses a goto can be rewritten so that it doesn&rsquo;t need the goto.</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>goto label;
+..
+.
+label: statement;</code></pre></div><p>Where label is an identifier that identifies a labeled statement. A labeled statement is any statement that is preceded by an identifier followed by a colon (:).</p>
+<h3 id="working-with-files">Working with files</h3>
+<p>In C++, files are mainly dealt by using three classes fstream, ifstream, ofstream available in fstream headerfile.</p>
+<ul>
+<li><strong>ofstream</strong>: Stream class to write on files</li>
+<li><strong>ifstream</strong>: Stream class to read from files</li>
+<li><strong>fstream</strong>: Stream class to both read and write from/to files.
+To perform file processing in C++, header files <!-- raw HTML omitted --> and <!-- raw HTML omitted --> must be included in your C++ source file.</li>
+</ul>
+<p><strong>Opening a file</strong>
+A file must be opened before you can read from it or write to it. Either ofstream or fstream object may be used to open a file for writing. And ifstream object is used to open a file for reading purpose only. Following is the standard syntax for open() function, which is a member of fstream, ifstream, and ofstream objects.</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>void open(const char *filename, ios::openmode mode);</code></pre></div><table>
+<thead>
+<tr>
+<th>Sr.No</th>
+<th>Mode Flag &amp; Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>ios::app</strong> Append mode. All output to that file to be appended to the end.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>ios::ate</strong> Open a file for output and move the read/write control to the end of the file.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>ios::in</strong> Open a file for reading.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>ios::out</strong> Open a file for writing.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>ios::trunc</strong> If the file already exists, its contents will be truncated before opening the file.</td>
+</tr>
+</tbody>
+</table>
+<p>We can combine two or more of these values by ORing them together. For example if you want to open a file in write mode and want to truncate it in case that already exists, following will be the syntax −</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>ofstream outfile;
+outfile.open(&#34;file.dat&#34;, ios::out | ios::trunc );</code></pre></div><p>Similar way, you can open a file for reading and writing purpose as follows −</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>fstream  afile;
+afile.open(&#34;file.dat&#34;, ios::out | ios::in );</code></pre></div><p><strong>Closing a File</strong>
+When a C++ program terminates it automatically flushes all the streams, release all the allocated memory and close all the opened files. But it is always a good practice that a programmer should close all the opened files before program termination. Following is the standard syntax for close() function, which is a member of fstream, ifstream, and ofstream objects.</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>void close();</code></pre></div><p><strong>Writing to a File</strong>
+While doing C++ programming, you write information to a file from your program using the stream insertion operator (&laquo;) just as you use that operator to output information to the screen. The only difference is that you use an <strong>ofstream</strong> or <strong>fstream</strong> object instead of the <strong>cout</strong> object.</p>
+<p><strong>Reading from a File</strong>
+You read information from a file into your program using the stream extraction operator (&raquo;) just as you use that operator to input information from the keyboard. The only difference is that you use an <strong>ifstream</strong> or <strong>fstream</strong> object instead of the <strong>cin</strong> object.</p>
+<p>More on Files: <!-- raw HTML omitted --> Click here <!-- raw HTML omitted --></p>
+<p>More on C++: <!-- raw HTML omitted -->Click here<!-- raw HTML omitted --></p>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+
+
+<style>
+  .image-container {
+    overflow: hidden;
+    width : 250px;  
+    height: 157px;  
+  }
+</style>
+
+<style>
+  img {
+    transform: scale(1);  
+  }
+</style>
+<div class="image-container">
+  <img src="https://www.penbaypilot.com/sites/default/files/2021/06/field/image/centerstackedwhite_rgb_norresized.png" alt="UNH Logo" />
+</div>
+
+<b style="color:#f9f9fc;">UNH COMPUTING RESOIURCES</b>
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1709931073" defer></script>
+        <script src="/js/search.js?1709931073" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics enlarge morespace">
+          <li data-nav-id="/academic-honesty-in-computing/index.html" class=""><a class="padding" href="/academic-honesty-in-computing/index.html">Academic Honesty in Computing</a></li>
+          <li data-nav-id="/classroom-assistants/index.html" class=""><a class="padding" href="/classroom-assistants/index.html">Classroom Assistants</a><ul id="subsections-71e2f08f9f2b77a196397033fe85740c" class="morespace">
+          <li data-nav-id="/classroom-assistants/spring-2024/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2024/index.html">Classroom Assistants - Spring 2024</a></li>
+          <li data-nav-id="/classroom-assistants/fall-2023/index.html" class=""><a class="padding" href="/classroom-assistants/fall-2023/index.html">Classroom Assistants - Fall 2023</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2023/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2023/index.html">Classroom Assistants - Spring 2023</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2022/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2022/index.html">Classroom Assistants - Spring 2022</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2021/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2021/index.html">Classroom Assistants - Spring 2021</a></li>
+          <li data-nav-id="/classroom-assistants/summer-2021/index.html" class=""><a class="padding" href="/classroom-assistants/summer-2021/index.html">Classroom Assistants - Summer 2021</a></li>
+          <li data-nav-id="/classroom-assistants/fall-2021/index.html" class=""><a class="padding" href="/classroom-assistants/fall-2021/index.html">Classroom Assistants - Fall 2021</a></li></ul></li>
+          <li data-nav-id="/github-pages-setup/index.html" class=""><a class="padding" href="/github-pages-setup/index.html">GitHub Pages</a></li>
+          <li data-nav-id="/loan-services/index.html" class=""><a class="padding" href="/loan-services/index.html">Loan Services</a><ul id="subsections-fdd606211f1c84022768c1e9a536275f" class="morespace">
+          <li data-nav-id="/loan-services/students-guide/index.html" class=""><a class="padding" href="/loan-services/students-guide/index.html">Student&#39;s guide to loan an equipment</a></li>
+          <li data-nav-id="/loan-services/covid-return-policy/index.html" class=""><a class="padding" href="/loan-services/covid-return-policy/index.html">Loaned equipment return policy</a></li></ul></li>
+          <li data-nav-id="/operating-systems/index.html" class=""><a class="padding" href="/operating-systems/index.html">Operating Systems</a><ul id="subsections-f8c0c88095c0614d0c6bc24e1783ff31" class="morespace">
+          <li data-nav-id="/operating-systems/dual-booting/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/dual-booting/index.html">Dual Booting</a><ul id="subsections-a53dd8f553a7206f9d81da8a9ab7554f" class="morespace">
+          <li data-nav-id="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html" class=""><a class="padding" href="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html">Alternate Installation of UBUNTU 20.1 in Gen 1 laptops</a></li>
+          <li data-nav-id="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html" class=""><a class="padding" href="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html">Dual Boot System Configuration</a></li></ul></li>
+          <li data-nav-id="/operating-systems/ubuntu/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/ubuntu/index.html">Ubuntu</a><ul id="subsections-8a7f5a2f3e74436a22b166bcc8bc9ff5" class="morespace">
+          <li data-nav-id="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html" class=""><a class="padding" href="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html">Creating partition on ubuntu during installation</a></li>
+          <li data-nav-id="/operating-systems/ubuntu/ubuntu-installation-guide/ubuntu-installation-guide/index.html" class=""><a class="padding" href="/operating-systems/ubuntu/ubuntu-installation-guide/ubuntu-installation-guide/index.html">Ubuntu Installation Guide</a></li></ul></li>
+          <li data-nav-id="/operating-systems/windows/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/windows/index.html">Windows</a><ul id="subsections-b568f5b6e397ebeb13a896190d2cd8f8" class="morespace">
+          <li data-nav-id="/operating-systems/windows/windows-partition/windows-partition/index.html" class=""><a class="padding" href="/operating-systems/windows/windows-partition/windows-partition/index.html">Create partition in windows</a></li></ul></li>
+          <li data-nav-id="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html" class=""><a class="padding" href="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html">Windows Linux Subsystem</a></li></ul></li>
+          <li data-nav-id="/programming/index.html" class="parent "><a class="padding" href="/programming/index.html">Programming</a><ul id="subsections-1842882245211a29a63259b060c6051c" class="morespace">
+          <li data-nav-id="/programming/cpp/index.html" class="active"><a class="padding" href="/programming/cpp/index.html">C&#43;&#43;  Programming</a></li>
+          <li data-nav-id="/programming/java/java/index.html" class=""><a class="padding" href="/programming/java/java/index.html">Java Programming</a></li>
+          <li data-nav-id="/programming/java-script/java-script/index.html" class=""><a class="padding" href="/programming/java-script/java-script/index.html">Javascript</a></li>
+          <li data-nav-id="/programming/perl/perl/index.html" class=""><a class="padding" href="/programming/perl/perl/index.html">Perl Programming</a></li>
+          <li data-nav-id="/programming/python/python/index.html" class=""><a class="padding" href="/programming/python/python/index.html">Python Programming</a></li></ul></li>
+          <li data-nav-id="/tools/index.html" class=""><a class="padding" href="/tools/index.html">Tools</a><ul id="subsections-cff67d57e00d6d598d882def3568f700" class="morespace">
+          <li data-nav-id="/tools/git/git_authentication/index.html" class=""><a class="padding" href="/tools/git/git_authentication/index.html">GitHub Authentication</a></li>
+          <li data-nav-id="/tools/python_linter/python_linter/index.html" class=""><a class="padding" href="/tools/python_linter/python_linter/index.html">Linter for Python</a></li>
+          <li data-nav-id="/tools/virtual_environments/index.html" class="alwaysopen"><a class="padding" href="/tools/virtual_environments/index.html">Virtual environments in Python</a><ul id="subsections-24ec8b3b2701aa40e12395869dbd931c" class="morespace">
+          <li data-nav-id="/tools/virtual_environments/conda/index.html" class=""><a class="padding" href="/tools/virtual_environments/conda/index.html">Conda</a></li>
+          <li data-nav-id="/tools/virtual_environments/pipenv/index.html" class=""><a class="padding" href="/tools/virtual_environments/pipenv/index.html">Pipenv</a></li></ul></li></ul></li>
+          <li data-nav-id="/unh-secure-connection/index.html" class=""><a class="padding" href="/unh-secure-connection/index.html">UNH Secure Network</a></li>
+        </ul>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/programming/cpp/index.html" selected></option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter">
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1709931073" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1709931073" defer></script>
+    <script src="/js/theme.js?1709931073" defer></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dual Booting on UNH COMP RESOURCES</title>
+    <link>//localhost:1313/operating-systems/dual-booting/index.html</link>
+    <description>Recent content in Dual Booting on UNH COMP RESOURCES</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/operating-systems/dual-booting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alternate Installation of UBUNTU 20.1 in Gen 1 laptops</title>
+      <link>//localhost:1313/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html</guid>
+      <description>Installing UBUNTU 20.1 in Gen 1 Laptops Requirements: -
+UBUNTU 20.1 image on USB Booting UBUNTU 20.1 on Gen1 Laptop: -
+Step 1: -
+Insert USB into Gen 1 Laptops after installing Windows 10 Post inserting the USB keep on pressing the F2 button until the below screen appears. Select the Boot Sequence option from the settings. Step2:-
+Click on Add Boot Option as shown below in figure Step 3: -</description>
+    </item>
+    <item>
+      <title>Dual Boot System Configuration</title>
+      <link>//localhost:1313/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html</guid>
+      <description>Dual Booting a Laptop with Windows 10 and Ubuntu
+Last updated on: February 23, 2024
+Requirements:
+Windows 10 image on USB Ubuntu 20.1 image on USB Booting Windows 10 onto laptop
+Insert the Windows 10 image on USB on to the laptop.
+Turn on the laptop and press the F12 key repeatedly until the boot menu appears.
+Select from the UeFi Boot menu which says uefi USB name. Windows installation appears as shown below.</description>
+    </item>
+  </channel>
+</rss>

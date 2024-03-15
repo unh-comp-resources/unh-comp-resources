@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on UNH COMP RESOURCES</title>
+    <link>//localhost:1313/operating-systems/ubuntu/index.html</link>
+    <description>Recent content in Ubuntu on UNH COMP RESOURCES</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/operating-systems/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating partition on ubuntu during installation</title>
+      <link>//localhost:1313/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html</guid>
+      <description>Select Something else in installation dialog
+You will see your disk as /dev/sda or /dev/mapper/pdc_* Click &amp;ldquo;New Partition Table&amp;hellip;&amp;rdquo; You will see that you have free space on your disk now: (Recommended) Create partition for swap. Swap is the partition for keeping unneeded memory pages, like Windows swap. Also it can be used for hibernation.
+Select free space and click + Set parameters like on the picture below: Notice that you should set swap size more than you have physical memory in order to use hibernation.</description>
+    </item>
+    <item>
+      <title>Ubuntu Installation Guide</title>
+      <link>//localhost:1313/operating-systems/ubuntu/ubuntu-installation-guide/ubuntu-installation-guide/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/operating-systems/ubuntu/ubuntu-installation-guide/ubuntu-installation-guide/index.html</guid>
+      <description>A minimum of 8GB storage USB drive.
+Download an LTS (long term support) version of Ubuntu file from this link.
+Note: 16.04 or above is recommended as these are the most used versions
+Download and install Rufus from link
+Follow the instructions at link to create a bootable USB with Ubuntu
+Important: Print this document before proceeding in case you are working on the same machine you are trying to dual boot.</description>
+    </item>
+  </channel>
+</rss>

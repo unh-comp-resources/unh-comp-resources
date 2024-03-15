@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtual environments in Python on UNH COMP RESOURCES</title>
+    <link>//localhost:1313/tools/virtual_environments/index.html</link>
+    <description>Recent content in Virtual environments in Python on UNH COMP RESOURCES</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/tools/virtual_environments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conda</title>
+      <link>//localhost:1313/tools/virtual_environments/conda/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tools/virtual_environments/conda/index.html</guid>
+      <description>Conda Installation Conda is an Open source package management system and envionment management system that runs on Windows,MacOS and Linux.
+Conda makes it easy to manage multiple data environments that can be maintained and run separately without interference from each other.
+Download Anaconda installer in your pc.
+Windows Installing on windows
+Linux Installing on Linux
+The conda command is the primary interface for managing installation.
+With the conda-install command, you can start using thousands of open-source Conda, R, Python and many other packages.</description>
+    </item>
+    <item>
+      <title>Pipenv</title>
+      <link>//localhost:1313/tools/virtual_environments/pipenv/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tools/virtual_environments/pipenv/index.html</guid>
+      <description>Overview Pipenv is a packaging tool for Python that solves some common problems associated with the typical workflow using pip, virtualenv, and the good old requirements.txt.
+In addition to addressing some common issues, it consolidates and simplifies the development process to a single command line tool.
+Problems that Pipenv solves Let’s say we&amp;rsquo;ve got a requirements.txt file that looks something like this:
+Python Requirementspackage_apackage_bLet’s say package_a has a sub-dependency package_c, and package_a requires a specific version of this package: package_c&amp;gt;=1.</description>
+    </item>
+  </channel>
+</rss>

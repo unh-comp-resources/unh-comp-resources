@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.123.8">
+    <meta name="generator" content="Relearn 5.17.1+tip">
+    <meta name="description" content="">
+    <title>Ubuntu Installation Guide :: UNH COMP RESOURCES</title>
+  <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+  <link href="/css/fontawesome-all.min.css?1709870354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1709870354" rel="stylesheet"></noscript>
+  <link href="/css/nucleus.css?1709870354" rel="stylesheet">
+  <link href="/css/auto-complete.css?1709870354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1709870354" rel="stylesheet"></noscript>
+  <link href="/css/perfect-scrollbar.min.css?1709870354" rel="stylesheet">
+  <link href="/css/fonts.css?1709870354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1709870354" rel="stylesheet"></noscript>
+  <link href="/css/theme.css?1709870354" rel="stylesheet">
+  <link href="/css/theme-relearn-dark.css?1709870354" rel="stylesheet" id="variant-style">
+  <link href="/css/variant.css?1709870354" rel="stylesheet">
+  <link href="/css/print.css?1709870354" rel="stylesheet" media="print">
+  <link href="/css/ie.css?1709870354" rel="stylesheet">
+  <script src="/js/url.js?1709870354"></script>
+  <script src="/js/variant.js?1709870354"></script>
+  <script>
+    // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+    // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72""
+    window.index_json_url="/index.json";
+    var root_url="/";
+    var baseUri=root_url.replace(/\/$/, '');
+    // translations
+    window.T_Copy_to_clipboard = 'Copy to clipboard';
+    window.T_Copied_to_clipboard = 'Copied to clipboard!';
+    window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+    window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+    window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+    window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+    // some further base stuff
+    var baseUriFull='localhost:1313/';
+    window.variants && variants.init( [ 'relearn-dark', 'relearn-light' ] );
+  </script>
+  </head>
+  <body class="mobile-support html" data-url="/operating-systems/ubuntu/ubuntu-installation-guide/ubunut-installation-guide/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/operating-systems/windows/index.html" title="Windows (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html" title="Creating partition on ubuntu during installation (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">UNH COMPUTING RESOURCES</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/operating-systems/index.html"><span itemprop="name">Operating Systems</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/operating-systems/ubuntu/index.html"><span itemprop="name">Ubuntu</span></a><meta itemprop="position" content="3"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Ubuntu Installation Guide</span><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="ubuntu-installation-guide">Ubuntu Installation Guide</h1>
+
+<ol>
+<li>
+<p>A minimum of 8GB storage USB drive.</p>
+</li>
+<li>
+<p>Download an LTS (long term support) version of Ubuntu file from this <a href="https://www.ubuntu.com/download/desktop" target="_blank">link</a>.</p>
+<p><strong>Note</strong>: 16.04 or above is recommended as these are the most used versions</p>
+</li>
+<li>
+<p>Download and install Rufus from <a href="http://rufus.ie/" target="_blank">link</a></p>
+</li>
+<li>
+<p>Follow the instructions at <a href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows" target="_blank">link</a> to create a bootable USB with Ubuntu</p>
+</li>
+<li>
+<p><strong>Important:</strong> Print this document before proceeding in case you are working on the same machine you are trying to dual boot.</p>
+</li>
+<li>
+<p>Go to Settings and select Update &amp; Security</p>
+<p>
+<a href="#image-9b0feddf36c391ca7c6de1ed3df2fb9a" class="lightbox-link">
+<img src="../../static/ubuntu_installation/1-settings.png" alt="Settings" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-9b0feddf36c391ca7c6de1ed3df2fb9a">
+<img src="../../static/ubuntu_installation/1-settings.png" alt="Settings" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+<li>
+<p>Click Recovery menu. Under Advanced start-up, click Restart Now</p>
+<p>
+<a href="#image-ad3af9c484de9e44cc4537531fdc0519" class="lightbox-link">
+<img src="../../static/ubuntu_installation/2-recovery.png" alt="Recovery" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-ad3af9c484de9e44cc4537531fdc0519">
+<img src="../../static/ubuntu_installation/2-recovery.png" alt="Recovery" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+<li>
+<p>Select Troubleshoot.</p>
+<p>
+<a href="#image-bacc46f6ac81803794879f48578be648" class="lightbox-link">
+<img src="../../static/ubuntu_installation/3-troubleshoot.png" alt="Troubleshoot" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-bacc46f6ac81803794879f48578be648">
+<img src="../../static/ubuntu_installation/3-troubleshoot.png" alt="Troubleshoot" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+<li>
+<p>Choose Advanced Options.</p>
+<p><a href="../../static/ubuntu_installation/4-advanced-startup.png">Advanced Options</a></p>
+</li>
+<li>
+<p>Select UEFI Firmware Settings. Then click Restart to restart the system and enter UEFI (BIOS).
+Note: You need to keep the USB drive with Ubuntu inserted while rebooting.</p>
+<p>
+<a href="#image-161d76799c93482b56c9e72127ba70c3" class="lightbox-link">
+<img src="../../static/ubuntu_installation/5-UEFI-settings.jpg" alt="UEFI" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-161d76799c93482b56c9e72127ba70c3">
+<img src="../../static/ubuntu_installation/5-UEFI-settings.jpg" alt="UEFI" class="lightbox-image" loading="lazy">
+</a></p>
+<p><strong>If you don't have UEFI Firmware Settings option,</strong> you can access boot menu in a different way. Reboot your computer, when it is starting up, press one of several keyboard keys: Esc, F2, F10 or F12, depending on the manufacturer of the computer or motherboard. The specific key to press is usually specified on the computer's startup screen.</p>
+</li>
+<li>
+<p>In UEFI boot menu select UEFI: INT13(,0x81).</p>
+<p>
+<a href="#image-8617593d0ac2fc9b9e8e33af52c90cd6" class="lightbox-link">
+<img src="../../static/ubuntu_installation/6-uefi-boot.jpg" alt="UEFI Boot" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-8617593d0ac2fc9b9e8e33af52c90cd6">
+<img src="../../static/ubuntu_installation/6-uefi-boot.jpg" alt="UEFI Boot" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+<li>
+<p>Choose Try Ubuntu without installing option.</p>
+<p>
+<a href="#image-00ca8e5f5d8d15d5ba48375e1566af2f" class="lightbox-link">
+<img src="../../static/ubuntu_installation/7-try-ubuntu.jpg" alt="Try Ubuntu without installing" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-00ca8e5f5d8d15d5ba48375e1566af2f">
+<img src="../../static/ubuntu_installation/7-try-ubuntu.jpg" alt="Try Ubuntu without installing" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+<li>
+<p>Launch Install Ubuntu from your desktop.</p>
+<p>
+<a href="#image-50bfe5d103ab0974bd5e35aea8c237f6" class="lightbox-link">
+<img src="../../static/ubuntu_installation/8-ubuntu-desktop.png" alt="Ubuntu Desktop" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-50bfe5d103ab0974bd5e35aea8c237f6">
+<img src="../../static/ubuntu_installation/8-ubuntu-desktop.png" alt="Ubuntu Desktop" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+<li>
+<p>Select check box <code>Install third party softwares</code> while istalling the ubuntu.</p>
+</li>
+<li>
+<p>Follow the Preparing to Install Ubuntu steps. You will be asked to choose language, time zone, user name, etc.</p>
+<p>Choose <strong>Install Ubuntu alongside Windows Boot Manager</strong> to install Ubuntu in dual boot with Windows or choose <strong>Erase disk and install Ubuntu</strong> if you don't need Windows anymore.</p>
+<p><strong>Important</strong> : If you don't have Install Ubuntu alongside Windows Boot Manager option, but there is enough space for Ubuntu installation, you will need to create a partition. You can do this in the installation dialog or quit installation, go back to Windows and create a partition there. Follow these links <a href="ubuntu_partition.html">How to Create a Partition in Ubuntu During Installation</a> and <a href="windows_partition.html">How to Create a Partition in Windows</a> to find the detailed instructions.</p>
+<p>
+<a href="#image-f09eedd48c452b23296e4b2ece4bd0d7" class="lightbox-link">
+<img src="../../static/ubuntu_installation/9-installation-type.png" alt="Installation Type" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-f09eedd48c452b23296e4b2ece4bd0d7">
+<img src="../../static/ubuntu_installation/9-installation-type.png" alt="Installation Type" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+<li>
+<p>Restart the computer</p>
+<p>
+<a href="#image-97e7d8451c78bad2a4a5c2c9b5a3e32a" class="lightbox-link">
+<img src="../../static/ubuntu_installation/10-restart.png" alt="Restart" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-97e7d8451c78bad2a4a5c2c9b5a3e32a">
+<img src="../../static/ubuntu_installation/10-restart.png" alt="Restart" class="lightbox-image" loading="lazy">
+</a></p>
+</li>
+</ol>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+
+
+<style>
+  .image-container {
+    overflow: hidden;
+    width : 250px;  
+    height: 157px;  
+  }
+</style>
+
+<style>
+  img {
+    transform: scale(1);  
+  }
+</style>
+<div class="image-container">
+  <img src="https://www.penbaypilot.com/sites/default/files/2021/06/field/image/centerstackedwhite_rgb_norresized.png" alt="UNH Logo" />
+</div>
+
+<b style="color:#f9f9fc;">UNH COMPUTING RESOIURCES</b>
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1709870354" defer></script>
+        <script src="/js/lunr/lunr.min.js?1709870354" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1709870354" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1709870354" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1709870354" defer></script>
+        <script src="/js/search.js?1709870354" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics enlarge morespace">
+          <li data-nav-id="/academic-honesty-in-computing/index.html" class=""><a class="padding" href="/academic-honesty-in-computing/index.html">Academic Honesty in Computing</a></li>
+          <li data-nav-id="/classroom-assistants/index.html" class=""><a class="padding" href="/classroom-assistants/index.html">Classroom Assistants</a><ul id="subsections-71e2f08f9f2b77a196397033fe85740c" class="morespace">
+          <li data-nav-id="/classroom-assistants/spring-2024/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2024/index.html">Classroom Assistants - Spring 2024</a></li>
+          <li data-nav-id="/classroom-assistants/fall-2023/index.html" class=""><a class="padding" href="/classroom-assistants/fall-2023/index.html">Classroom Assistants - Fall 2023</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2023/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2023/index.html">Classroom Assistants - Spring 2023</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2022/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2022/index.html">Classroom Assistants - Spring 2022</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2021/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2021/index.html">Classroom Assistants - Spring 2021</a></li>
+          <li data-nav-id="/classroom-assistants/summer-2021/index.html" class=""><a class="padding" href="/classroom-assistants/summer-2021/index.html">Classroom Assistants - Summer 2021</a></li>
+          <li data-nav-id="/classroom-assistants/fall-2021/index.html" class=""><a class="padding" href="/classroom-assistants/fall-2021/index.html">Classroom Assistants - Fall 2021</a></li></ul></li>
+          <li data-nav-id="/github-pages-setup/index.html" class=""><a class="padding" href="/github-pages-setup/index.html">GitHub Pages</a></li>
+          <li data-nav-id="/loan-services/index.html" class=""><a class="padding" href="/loan-services/index.html">Loan Services</a><ul id="subsections-fdd606211f1c84022768c1e9a536275f" class="morespace">
+          <li data-nav-id="/loan-services/students-guide/index.html" class=""><a class="padding" href="/loan-services/students-guide/index.html">Student&#39;s guide to loan an equipment</a></li>
+          <li data-nav-id="/loan-services/covid-return-policy/index.html" class=""><a class="padding" href="/loan-services/covid-return-policy/index.html">Loaned equipment return policy</a></li></ul></li>
+          <li data-nav-id="/operating-systems/index.html" class="parent "><a class="padding" href="/operating-systems/index.html">Operating Systems</a><ul id="subsections-f8c0c88095c0614d0c6bc24e1783ff31" class="morespace">
+          <li data-nav-id="/operating-systems/dual-booting/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/dual-booting/index.html">Dual Booting</a><ul id="subsections-a53dd8f553a7206f9d81da8a9ab7554f" class="morespace">
+          <li data-nav-id="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html" class=""><a class="padding" href="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html">Alternate Installation of UBUNTU 20.1 in Gen 1 laptops</a></li>
+          <li data-nav-id="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html" class=""><a class="padding" href="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html">Dual Boot System Configuration</a></li></ul></li>
+          <li data-nav-id="/operating-systems/ubuntu/index.html" class="parent alwaysopen"><a class="padding" href="/operating-systems/ubuntu/index.html">Ubuntu</a><ul id="subsections-8a7f5a2f3e74436a22b166bcc8bc9ff5" class="morespace">
+          <li data-nav-id="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html" class=""><a class="padding" href="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html">Creating partition on ubuntu during installation</a></li>
+          <li data-nav-id="/operating-systems/ubuntu/ubuntu-installation-guide/ubunut-installation-guide/index.html" class="active"><a class="padding" href="/operating-systems/ubuntu/ubuntu-installation-guide/ubunut-installation-guide/index.html">Ubuntu Installation Guide</a></li></ul></li>
+          <li data-nav-id="/operating-systems/windows/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/windows/index.html">Windows</a><ul id="subsections-b568f5b6e397ebeb13a896190d2cd8f8" class="morespace">
+          <li data-nav-id="/operating-systems/windows/windows-partition/windows-partition/index.html" class=""><a class="padding" href="/operating-systems/windows/windows-partition/windows-partition/index.html">Create partition in windows</a></li></ul></li>
+          <li data-nav-id="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html" class=""><a class="padding" href="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html">Windows Linux Subsystem</a></li></ul></li>
+          <li data-nav-id="/programming/index.html" class=""><a class="padding" href="/programming/index.html">Programming</a><ul id="subsections-1842882245211a29a63259b060c6051c" class="morespace">
+          <li data-nav-id="/programming/cpp/index.html" class=""><a class="padding" href="/programming/cpp/index.html">C&#43;&#43;  Programming</a></li>
+          <li data-nav-id="/programming/java/java/index.html" class=""><a class="padding" href="/programming/java/java/index.html">Java Programming</a></li>
+          <li data-nav-id="/programming/java-script/java-script/index.html" class=""><a class="padding" href="/programming/java-script/java-script/index.html">Javascript</a></li>
+          <li data-nav-id="/programming/perl/perl/index.html" class=""><a class="padding" href="/programming/perl/perl/index.html">Perl Programming</a></li>
+          <li data-nav-id="/programming/python/python/index.html" class=""><a class="padding" href="/programming/python/python/index.html">Python Programming</a></li></ul></li>
+          <li data-nav-id="/tools/index.html" class=""><a class="padding" href="/tools/index.html">Tools</a><ul id="subsections-cff67d57e00d6d598d882def3568f700" class="morespace">
+          <li data-nav-id="/tools/git/git_authentication/index.html" class=""><a class="padding" href="/tools/git/git_authentication/index.html">GitHub Authentication</a></li>
+          <li data-nav-id="/tools/python_linter/python_linter/index.html" class=""><a class="padding" href="/tools/python_linter/python_linter/index.html">Linter for Python</a></li>
+          <li data-nav-id="/tools/virtual_environments/index.html" class="alwaysopen"><a class="padding" href="/tools/virtual_environments/index.html">Virtual environments in Python</a><ul id="subsections-24ec8b3b2701aa40e12395869dbd931c" class="morespace">
+          <li data-nav-id="/tools/virtual_environments/conda/index.html" class=""><a class="padding" href="/tools/virtual_environments/conda/index.html">Conda</a></li>
+          <li data-nav-id="/tools/virtual_environments/pipenv/index.html" class=""><a class="padding" href="/tools/virtual_environments/pipenv/index.html">Pipenv</a></li></ul></li></ul></li>
+          <li data-nav-id="/unh-secure-connection/index.html" class=""><a class="padding" href="/unh-secure-connection/index.html">UNH Secure Network</a></li>
+        </ul>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/operating-systems/ubuntu/ubuntu-installation-guide/ubunut-installation-guide/index.html" selected></option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter">
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1709870354" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1709870354" defer></script>
+    <script src="/js/theme.js?1709870354" defer></script>
+  </body>
+</html>
