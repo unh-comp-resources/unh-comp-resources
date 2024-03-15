@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.123.8">
+    <meta name="generator" content="Relearn 5.17.1+tip">
+    <meta name="description" content="">
+    <title>Python Programming :: UNH COMP RESOURCES</title>
+  <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+  <link href="/css/fontawesome-all.min.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/nucleus.css?1709931073" rel="stylesheet">
+  <link href="/css/auto-complete.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/perfect-scrollbar.min.css?1709931073" rel="stylesheet">
+  <link href="/css/fonts.css?1709931073" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1709931073" rel="stylesheet"></noscript>
+  <link href="/css/theme.css?1709931073" rel="stylesheet">
+  <link href="/css/theme-relearn-dark.css?1709931073" rel="stylesheet" id="variant-style">
+  <link href="/css/variant.css?1709931073" rel="stylesheet">
+  <link href="/css/print.css?1709931073" rel="stylesheet" media="print">
+  <link href="/css/ie.css?1709931073" rel="stylesheet">
+  <script src="/js/url.js?1709931073"></script>
+  <script src="/js/variant.js?1709931073"></script>
+  <script>
+    // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+    // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+    window.index_json_url="/index.json";
+    var root_url="/";
+    var baseUri=root_url.replace(/\/$/, '');
+    // translations
+    window.T_Copy_to_clipboard = 'Copy to clipboard';
+    window.T_Copied_to_clipboard = 'Copied to clipboard!';
+    window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+    window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+    window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+    window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+    // some further base stuff
+    var baseUriFull='localhost:1313/';
+    window.variants && variants.init( [ 'relearn-dark', 'relearn-light' ] );
+  </script>
+  </head>
+  <body class="mobile-support html" data-url="/programming/python/python/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/tools/index.html" title="Tools (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/programming/perl/perl/index.html" title="Perl Programming (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">UNH COMPUTING RESOURCES</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/programming/index.html"><span itemprop="name">Programming</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Python Programming</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#data-types">Data Types</a>
+      <ul>
+        <li><a href="#string">String</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#tuples">Tuples</a></li>
+        <li><a href="#dictionaries">Dictionaries</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="python-programming">Python Programming</h1>
+
+<h2 id="about">About</h2>
+<p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python&rsquo;s design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</p>
+<p>Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is often described as a &ldquo;batteries included&rdquo; language due to its comprehensive standard library.</p>
+<p>Python was conceived in the late 1980s as a successor to the ABC language. Python 2.0, released in 2000, introduced features like list comprehensions and a garbage collection system capable of collecting reference cycles. Python 3.0, released in 2008, was a major revision of the language that is not completely backward-compatible, and much Python 2 code does not run unmodified on Python 3.</p>
+<h2 id="data-types">Data Types</h2>
+<p>There are several data types in Python. The main data types that we use most are string, integer, float, list, dict and tuple.</p>
+<h3 id="string">String</h3>
+<p>Strings are usually created in one of three ways. We can use single, double or triple quotes.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Welcome to Python!&#34;</span>
+</span></span><span style="display:flex;"><span>another_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;The bright red fox jumped the fence.&#39;</span>
+</span></span><span style="display:flex;"><span>a_long_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;&#39;This is a
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">multi-line string. It covers more than
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">one line&#39;&#39;&#39;</span></span></span></code></pre></div><p>There’s actually one other way to create a string and that is by using the str method. Here’s how it works:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_number <span style="color:#f92672">=</span> <span style="color:#ae81ff">123</span>
+</span></span><span style="display:flex;"><span>my_string <span style="color:#f92672">=</span> str(my_number)</span></span></code></pre></div><p>If you type the code above into your interpreter, you’ll find that you have transformed the integer value into a string and assigned the string to the variable my_string. This is known as casting. You can cast some data types into other data types, like numbers into strings. But you’ll also find that you can’t always do the reverse, such as casting a string like ‘ABC’ into an integer. If you do that, you’ll end up with an error like the one in the following example:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>int(<span style="color:#e6db74">&#39;ABC&#39;</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;&lt;string&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>fragment<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ValueError</span>: invalid literal <span style="color:#66d9ef">for</span> int() <span style="color:#66d9ef">with</span> base <span style="color:#ae81ff">10</span>: <span style="color:#e6db74">&#39;ABC&#39;</span></span></span></code></pre></div><p>Concatenation is a big word that means to combine or add two things together. In this case, we want to know how to add two strings together. As you might suspect, this operation is very easy in Python:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>string_one <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My dog ate &#34;</span>
+</span></span><span style="display:flex;"><span>string_two <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;my homework!&#34;</span>
+</span></span><span style="display:flex;"><span>string_three <span style="color:#f92672">=</span> string_one <span style="color:#f92672">+</span> string_two</span></span></code></pre></div><p>String Slicing</p>
+<p>Let’s take a look at how slicing works with the following string:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;I like Python!&#34;</span></span></span></code></pre></div><p>Each character in a string can be accessed using slicing. For example, if I want to grab just the first character, I could do this:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_string[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">1</span>]</span></span></code></pre></div><p>This grabs the first character in the string up to, but not including, the 2nd character. Yes, Python is zero-based. It’s a little easier to understand if we map out each character’s position in a table:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">0</span> 	<span style="color:#ae81ff">1</span> 	<span style="color:#ae81ff">2</span> 	<span style="color:#ae81ff">3</span> 	<span style="color:#ae81ff">4</span> 	<span style="color:#ae81ff">5</span> 	<span style="color:#ae81ff">6</span> 	<span style="color:#ae81ff">7</span> 	<span style="color:#ae81ff">8</span> 	<span style="color:#ae81ff">9</span> 	<span style="color:#ae81ff">10</span> 	<span style="color:#ae81ff">11</span> 	<span style="color:#ae81ff">12</span> 	<span style="color:#ae81ff">13</span>
+</span></span><span style="display:flex;"><span>I 	  	l 	i 	k 	e 	  	P 	y 	t 	h 	o 	n 	<span style="color:#960050;background-color:#1e0010">!</span></span></span></code></pre></div><p>Thus we have a string that is 14 characters long, starting at zero and going through thirteen. Let’s do a few more examples to get these concepts into our heads better.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_string[:<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;I&#39;</span>
+</span></span><span style="display:flex;"><span>my_string[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">12</span>]
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;I like Pytho&#39;</span>
+</span></span><span style="display:flex;"><span>my_string[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">13</span>]
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;I like Python&#39;</span>
+</span></span><span style="display:flex;"><span>my_string[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">14</span>]
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;I like Python!&#39;</span>
+</span></span><span style="display:flex;"><span>my_string[<span style="color:#ae81ff">0</span>:<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;I like Py&#39;</span>
+</span></span><span style="display:flex;"><span>my_string[:]
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;I like Python!&#39;</span>
+</span></span><span style="display:flex;"><span>my_string[<span style="color:#ae81ff">2</span>:]
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;like Python!&#39;</span></span></span></code></pre></div><p>As we can see from these examples, we can do a slice by just specifying the beginning of the slice (i.e. my_string[2:]), the ending of the slice (i.e. my_string[:1]) or both (i.e. my_string[0:13]). We can even use negative values that start at the end of the string. So the example where we did my_string[0:-5] starts at zero, but ends 5 characters before the end of the string.</p>
+<p>More on Strings : <!-- raw HTML omitted -->Click here<!-- raw HTML omitted --></p>
+<h3 id="lists">Lists</h3>
+<p>A Python list is similar to an array in other languages. In Python, an empty list can be created in the following ways.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_list <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>my_list <span style="color:#f92672">=</span> list()</span></span></code></pre></div><p>As we can see, we can create the list using square brackets or by using the Python built-in, list. A list contains a list of elements, such as strings, integers, objects or a mixture of types. Let’s take a look at some examples:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>my_list2 <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>]
+</span></span><span style="display:flex;"><span>my_list3 <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;Python&#34;</span>, <span style="color:#ae81ff">5</span>]</span></span></code></pre></div><p>The first list has 3 integers, the second has 3 strings and the third has a mixture. You can also create lists of lists like this:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_nested_list <span style="color:#f92672">=</span> [my_list, my_list2]
+</span></span><span style="display:flex;"><span>my_nested_list
+</span></span><span style="display:flex;"><span>[[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>]]</span></span></code></pre></div><p>We can also sort a list. Let’s spend a moment to see how to do that:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>alpha_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">67</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">88</span>, <span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>alpha_list<span style="color:#f92672">.</span>sort()
+</span></span><span style="display:flex;"><span>alpha_list
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">67</span>, <span style="color:#ae81ff">88</span>, <span style="color:#ae81ff">100</span>]</span></span></code></pre></div><p>Let’s do one more example:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>alpha_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">67</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">88</span>, <span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>sorted_list <span style="color:#f92672">=</span> alpha_list<span style="color:#f92672">.</span>sort()
+</span></span><span style="display:flex;"><span>sorted_list
+</span></span><span style="display:flex;"><span>print(sorted_list)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">None</span></span></span></code></pre></div><p>In this example, we try to assign the sorted list to a variable. However, when we call the sort() method on a list, it sorts the list in-place. So if we try to assign the result to another variable, then we’ll find out that we’ll get a None object, which is like a Null in other languages. Thus when we want to sort something, just remember that we sort them in-place and we cannot assign it to a different variable.</p>
+<p>We can slice a list just like you do with a string:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>alpha_list[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">34</span>]</span></span></code></pre></div><p>This code returns a list of just the first 3 elements.</p>
+<h3 id="tuples">Tuples</h3>
+<p>A tuple is similar to a list, but we create them with parentheses instead of square brackets. We can also use the tuple built-in. The main difference is that a tuple is immutable while the list is mutable. Let’s take a look at a few examples:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_tuple <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>my_tuple[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>another_tuple <span style="color:#f92672">=</span> tuple()
+</span></span><span style="display:flex;"><span>abc <span style="color:#f92672">=</span> tuple([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>])</span></span></code></pre></div><p>The code above demonstrates one way to create a tuple with five elements. It also shows that we can do tuple slicing. However, we cannot sort a tuple! The last two examples shows how to create tuples using the tuple keyword. The first one just creates an empty tuple whereas the second example has three elements inside it. Notice that it has a list inside it. This is an example of casting. We can change or cast an item from one data type to another. In this case, we cast a list into a tuple. If we want to turn the abc tuple back into a list, we can do the following:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>abc_list <span style="color:#f92672">=</span> list(abc)</span></span></code></pre></div><p>To reiterate, the code above casts the tuple (abc) into a list using the list function.</p>
+<h3 id="dictionaries">Dictionaries</h3>
+<p>A Python dictionary is basically a hash table or a hash mapping. In some languages, they might be referred to as associative memories or associative arrays. They are indexed with keys, which can be any immutable type. For example, a string or number can be a key. We need to be aware that a dictionary is an unordered set of key:value pairs and the keys must be unique. We can get a list of keys by calling a dictionary instance’s keys method. To check if a dictionary has a key, you can use Python’s &ldquo;in&rdquo; keyword. In some of the older versions of Python (2.3 and older to be specific), you will see the has_key keyword used for testing if a key is in a dictionary. This keyword is deprecated in Python 2.x and removed entirely from Python 3.x.</p>
+<p>Let’s take a moment to see how we create a dictionary.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_dict <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>another_dict <span style="color:#f92672">=</span> dict()
+</span></span><span style="display:flex;"><span>my_other_dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;one&#34;</span>:<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;two&#34;</span>:<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;three&#34;</span>:<span style="color:#ae81ff">3</span>}
+</span></span><span style="display:flex;"><span>my_other_dict
+</span></span><span style="display:flex;"><span>{<span style="color:#e6db74">&#39;three&#39;</span>: <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#39;two&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#39;one&#39;</span>: <span style="color:#ae81ff">1</span>}</span></span></code></pre></div><p>The first two examples show how to create an empty dictionary. All dictionaries are enclosed with curly braces. The last line is printed out so we can see how unordered a dictionary is. Now it’s time to find out how to access a value in a dictionary.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_other_dict[<span style="color:#e6db74">&#34;one&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>my_dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;Mike&#34;</span>, <span style="color:#e6db74">&#34;address&#34;</span>:<span style="color:#e6db74">&#34;123 Happy Way&#34;</span>}
+</span></span><span style="display:flex;"><span>my_dict[<span style="color:#e6db74">&#34;name&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;Mike&#39;</span></span></span></code></pre></div><p>In the first example, we use the dictionary from the previous example and pull out the value associated with the key called “one”. The second example shows how to acquire the value for the “name” key. Now let’s see how to tell if a key is in a dictionary or not:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#f92672">in</span> my_dict
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;state&#34;</span> <span style="color:#f92672">in</span> my_dict
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">False</span></span></span></code></pre></div><p>So, if the key is in the dictionary, Python returns a Boolean True. Otherwise it returns a Boolean False. If we need to get a listing of all the keys in a dictionary, then we do this:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_dict<span style="color:#f92672">.</span>keys()
+</span></span><span style="display:flex;"><span>dict_keys([<span style="color:#e6db74">&#39;name&#39;</span>, <span style="color:#e6db74">&#39;address&#39;</span>])</span></span></code></pre></div><p>In Python 2, the keys method returns a list. But in Python 3, it returns a view object. This gives the developer the ability to update the dictionary and the view will automatically update too. Also note that when using the in keyword for dictionary membership testing, it is better to do it against the dictionary instead of the list returned from the keys method. See below:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#f92672">in</span> my_dict         <span style="color:#75715e"># this is good</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#f92672">in</span> my_dict<span style="color:#f92672">.</span>keys()  <span style="color:#75715e"># this works too, but is slower</span></span></span></code></pre></div>
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+
+
+<style>
+  .image-container {
+    overflow: hidden;
+    width : 250px;  
+    height: 157px;  
+  }
+</style>
+
+<style>
+  img {
+    transform: scale(1);  
+  }
+</style>
+<div class="image-container">
+  <img src="https://www.penbaypilot.com/sites/default/files/2021/06/field/image/centerstackedwhite_rgb_norresized.png" alt="UNH Logo" />
+</div>
+
+<b style="color:#f9f9fc;">UNH COMPUTING RESOIURCES</b>
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1709931073" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1709931073" defer></script>
+        <script src="/js/search.js?1709931073" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics enlarge morespace">
+          <li data-nav-id="/academic-honesty-in-computing/index.html" class=""><a class="padding" href="/academic-honesty-in-computing/index.html">Academic Honesty in Computing</a></li>
+          <li data-nav-id="/classroom-assistants/index.html" class=""><a class="padding" href="/classroom-assistants/index.html">Classroom Assistants</a><ul id="subsections-71e2f08f9f2b77a196397033fe85740c" class="morespace">
+          <li data-nav-id="/classroom-assistants/spring-2024/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2024/index.html">Classroom Assistants - Spring 2024</a></li>
+          <li data-nav-id="/classroom-assistants/fall-2023/index.html" class=""><a class="padding" href="/classroom-assistants/fall-2023/index.html">Classroom Assistants - Fall 2023</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2023/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2023/index.html">Classroom Assistants - Spring 2023</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2022/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2022/index.html">Classroom Assistants - Spring 2022</a></li>
+          <li data-nav-id="/classroom-assistants/spring-2021/index.html" class=""><a class="padding" href="/classroom-assistants/spring-2021/index.html">Classroom Assistants - Spring 2021</a></li>
+          <li data-nav-id="/classroom-assistants/summer-2021/index.html" class=""><a class="padding" href="/classroom-assistants/summer-2021/index.html">Classroom Assistants - Summer 2021</a></li>
+          <li data-nav-id="/classroom-assistants/fall-2021/index.html" class=""><a class="padding" href="/classroom-assistants/fall-2021/index.html">Classroom Assistants - Fall 2021</a></li></ul></li>
+          <li data-nav-id="/github-pages-setup/index.html" class=""><a class="padding" href="/github-pages-setup/index.html">GitHub Pages</a></li>
+          <li data-nav-id="/loan-services/index.html" class=""><a class="padding" href="/loan-services/index.html">Loan Services</a><ul id="subsections-fdd606211f1c84022768c1e9a536275f" class="morespace">
+          <li data-nav-id="/loan-services/students-guide/index.html" class=""><a class="padding" href="/loan-services/students-guide/index.html">Student&#39;s guide to loan an equipment</a></li>
+          <li data-nav-id="/loan-services/covid-return-policy/index.html" class=""><a class="padding" href="/loan-services/covid-return-policy/index.html">Loaned equipment return policy</a></li></ul></li>
+          <li data-nav-id="/operating-systems/index.html" class=""><a class="padding" href="/operating-systems/index.html">Operating Systems</a><ul id="subsections-f8c0c88095c0614d0c6bc24e1783ff31" class="morespace">
+          <li data-nav-id="/operating-systems/dual-booting/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/dual-booting/index.html">Dual Booting</a><ul id="subsections-a53dd8f553a7206f9d81da8a9ab7554f" class="morespace">
+          <li data-nav-id="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html" class=""><a class="padding" href="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html">Alternate Installation of UBUNTU 20.1 in Gen 1 laptops</a></li>
+          <li data-nav-id="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html" class=""><a class="padding" href="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html">Dual Boot System Configuration</a></li></ul></li>
+          <li data-nav-id="/operating-systems/ubuntu/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/ubuntu/index.html">Ubuntu</a><ul id="subsections-8a7f5a2f3e74436a22b166bcc8bc9ff5" class="morespace">
+          <li data-nav-id="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html" class=""><a class="padding" href="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html">Creating partition on ubuntu during installation</a></li>
+          <li data-nav-id="/operating-systems/ubuntu/ubuntu-installation-guide/ubuntu-installation-guide/index.html" class=""><a class="padding" href="/operating-systems/ubuntu/ubuntu-installation-guide/ubuntu-installation-guide/index.html">Ubuntu Installation Guide</a></li></ul></li>
+          <li data-nav-id="/operating-systems/windows/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/windows/index.html">Windows</a><ul id="subsections-b568f5b6e397ebeb13a896190d2cd8f8" class="morespace">
+          <li data-nav-id="/operating-systems/windows/windows-partition/windows-partition/index.html" class=""><a class="padding" href="/operating-systems/windows/windows-partition/windows-partition/index.html">Create partition in windows</a></li></ul></li>
+          <li data-nav-id="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html" class=""><a class="padding" href="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html">Windows Linux Subsystem</a></li></ul></li>
+          <li data-nav-id="/programming/index.html" class="parent "><a class="padding" href="/programming/index.html">Programming</a><ul id="subsections-1842882245211a29a63259b060c6051c" class="morespace">
+          <li data-nav-id="/programming/cpp/index.html" class=""><a class="padding" href="/programming/cpp/index.html">C&#43;&#43;  Programming</a></li>
+          <li data-nav-id="/programming/java/java/index.html" class=""><a class="padding" href="/programming/java/java/index.html">Java Programming</a></li>
+          <li data-nav-id="/programming/java-script/java-script/index.html" class=""><a class="padding" href="/programming/java-script/java-script/index.html">Javascript</a></li>
+          <li data-nav-id="/programming/perl/perl/index.html" class=""><a class="padding" href="/programming/perl/perl/index.html">Perl Programming</a></li>
+          <li data-nav-id="/programming/python/python/index.html" class="active"><a class="padding" href="/programming/python/python/index.html">Python Programming</a></li></ul></li>
+          <li data-nav-id="/tools/index.html" class=""><a class="padding" href="/tools/index.html">Tools</a><ul id="subsections-cff67d57e00d6d598d882def3568f700" class="morespace">
+          <li data-nav-id="/tools/git/git_authentication/index.html" class=""><a class="padding" href="/tools/git/git_authentication/index.html">GitHub Authentication</a></li>
+          <li data-nav-id="/tools/python_linter/python_linter/index.html" class=""><a class="padding" href="/tools/python_linter/python_linter/index.html">Linter for Python</a></li>
+          <li data-nav-id="/tools/virtual_environments/index.html" class="alwaysopen"><a class="padding" href="/tools/virtual_environments/index.html">Virtual environments in Python</a><ul id="subsections-24ec8b3b2701aa40e12395869dbd931c" class="morespace">
+          <li data-nav-id="/tools/virtual_environments/conda/index.html" class=""><a class="padding" href="/tools/virtual_environments/conda/index.html">Conda</a></li>
+          <li data-nav-id="/tools/virtual_environments/pipenv/index.html" class=""><a class="padding" href="/tools/virtual_environments/pipenv/index.html">Pipenv</a></li></ul></li></ul></li>
+          <li data-nav-id="/unh-secure-connection/index.html" class=""><a class="padding" href="/unh-secure-connection/index.html">UNH Secure Network</a></li>
+        </ul>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/programming/python/python/index.html" selected></option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter">
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1709931073" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1709931073" defer></script>
+    <script src="/js/theme.js?1709931073" defer></script>
+  </body>
+</html>

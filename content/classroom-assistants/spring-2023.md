@@ -1,6 +1,6 @@
 ---
 title: "Classroom Assistants - Spring 2023"
-weight: 2
+weight: 3
 ---
 
 {{< rawhtml >}}

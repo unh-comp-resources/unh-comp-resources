@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UNH COMPUTING RESOURCES on UNH COMP RESOURCES</title>
+    <link>//localhost:1313/index.html</link>
+    <description>Recent content in UNH COMPUTING RESOURCES on UNH COMP RESOURCES</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Academic Honesty in Computing</title>
+      <link>//localhost:1313/academic-honesty-in-computing/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/academic-honesty-in-computing/index.html</guid>
+      <description>Overview You will find here information about academic honesty guidelines in programming subjects. The goal is to help you understand when you can reuse code and how to collaborate with others on programming homework and projects.
+What are example of academic dishonesty in programming assignments?
+In individual programming assignments and projects, you need to develop your code on your own. Examples of academic dishonesty include the following:
+Having someone write the code for you.</description>
+    </item>
+    <item>
+      <title>Classroom Assistants</title>
+      <link>//localhost:1313/classroom-assistants/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/classroom-assistants/index.html</guid>
+      <description>Classroom Assistants - Spring 2024Classroom Assistants - Fall 2023Classroom Assistants - Spring 2023Classroom Assistants - Spring 2022Classroom Assistants - Spring 2021Classroom Assistants - Summer 2021Classroom Assistants - Fall 2021</description>
+    </item>
+    <item>
+      <title>GitHub Pages</title>
+      <link>//localhost:1313/github-pages-setup/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/github-pages-setup/index.html</guid>
+      <description>To test your site locally, you&amp;rsquo;ll need
+Ruby Bundler GitHub pages gem Understanding the virtual environment It is an isolated environment separate from other projects. Virtual Environments keep dependencies separated by project and because of that, they allow you to use different versions of Python or third-party libraries in each project you work on.
+What is Jekyll and why use Jekyll? GitHub Pages are public web pages for users, organizations, and repositories,that are freely hosted on GitHub’s github.</description>
+    </item>
+    <item>
+      <title>Loan Services</title>
+      <link>//localhost:1313/loan-services/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/loan-services/index.html</guid>
+      <description>Student&amp;#39;s guide to loan an equipmentLoaned equipment return policy</description>
+    </item>
+    <item>
+      <title>Operating Systems</title>
+      <link>//localhost:1313/operating-systems/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/operating-systems/index.html</guid>
+      <description>Dual BootingAlternate Installation of UBUNTU 20.1 in Gen 1 laptopsDual Boot System ConfigurationUbuntuCreating partition on ubuntu during installationUbuntu Installation GuideWindowsCreate partition in windowsWindows Linux Subsystem</description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>//localhost:1313/programming/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/programming/index.html</guid>
+      <description>This page consists of brief explanation on how the same program is implemented in different programming languages: Perl, Python, Java, JavaScript, C++.
+The example program taken for this purpose describes how to:
+declare and initialize datatypes simple datatypes like numbers structured datatypes like string, hash or dictionary access elements in each of the different datatypes(indexing) use simple statements, such as assignment, function call, print statements, relational operators. use conditional statements, such as if.</description>
+    </item>
+    <item>
+      <title>Tools</title>
+      <link>//localhost:1313/tools/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tools/index.html</guid>
+      <description>GitHub AuthenticationLinter for PythonVirtual environments in PythonCondaPipenv</description>
+    </item>
+    <item>
+      <title>UNH Secure Network</title>
+      <link>//localhost:1313/unh-secure-connection/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/unh-secure-connection/index.html</guid>
+      <description>Connecting to Eduroam Connecting to eduroam in Ubuntu Connect to Eduroam wireless network. It opens a browser with URL cloudpath. Login as a student with your personal UNH ID and password. Follow the onscreen instructions. A zip file will be downloaded. Now, extract the zip file to a location such as the documents or downloads folder and run the cloudpath executable. Once exe has finished configuring the wifi, you will be able to connect to Eduroam.</description>
+    </item>
+  </channel>
+</rss>

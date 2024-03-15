@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operating Systems on UNH COMP RESOURCES</title>
+    <link>//localhost:1313/operating-systems/index.html</link>
+    <description>Recent content in Operating Systems on UNH COMP RESOURCES</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/operating-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dual Booting</title>
+      <link>//localhost:1313/operating-systems/dual-booting/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/operating-systems/dual-booting/index.html</guid>
+      <description>Alternate Installation of UBUNTU 20.1 in Gen 1 laptopsDual Boot System Configuration</description>
+    </item>
+    <item>
+      <title>Ubuntu</title>
+      <link>//localhost:1313/operating-systems/ubuntu/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/operating-systems/ubuntu/index.html</guid>
+      <description>Creating partition on ubuntu during installationUbuntu Installation Guide</description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>//localhost:1313/operating-systems/windows/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/operating-systems/windows/index.html</guid>
+      <description>Create partition in windows</description>
+    </item>
+    <item>
+      <title>Windows Linux Subsystem</title>
+      <link>//localhost:1313/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html</guid>
+      <description>Installing WSL Step 1: open an administrator command prompt in the windows search bar search for &amp;ldquo;cmd&amp;rdquo;
+the search bar can be accessed by clicking in the bottom left of your screen or by pressing the windows key on your keyboard Hover over &amp;ldquo;command prompt&amp;rdquo; and Click &amp;ldquo;Run as administrator&amp;rdquo; step 2: Installing WSL Run the command &amp;ldquo;WSL.exe &amp;ndash;install&amp;rdquo; Step 3: Restart your laptop after installation completes After you restart, you should see this windows pop open, wait for it to completes Installation Step 4: Confirm installation After installation is complete ensure that wsl properly installed by searching for &amp;ldquo;ubuntu&amp;rdquo; and checking that it appears.</description>
+    </item>
+  </channel>
+</rss>
