@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on UNH COMP RESOURCES</title>
+    <link>//localhost:1313/tools/index.html</link>
+    <description>Recent content in Tools on UNH COMP RESOURCES</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub Authentication</title>
+      <link>//localhost:1313/tools/git/git_authentication/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tools/git/git_authentication/index.html</guid>
+      <description>Have Git installed on local machine Set your Git user name for all repositories on your local machine git config &amp;ndash;global user.name &amp;quot;mihaelasabin&amp;quot;
+Confirm that your Git user name has been set for all repositories on your local machine
+git config &amp;ndash;global user.name
+GitHub authentication If Git prompts you for a username and password every time you try to interact with GitHub (using push, fetch, or pull commands), it means that you have used HTTPS clone URL for the repository.</description>
+    </item>
+    <item>
+      <title>Linter for Python</title>
+      <link>//localhost:1313/tools/python_linter/python_linter/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tools/python_linter/python_linter/index.html</guid>
+      <description>Installation of Python linter on Atom editor (Ubuntu) Linter analyzes the code and checks for the syntax errors. Follow the below steps to have python linter set up in Atom editor on ubuntu os:
+Open Atom editor and go to ‘Settings’
+Go to “Install”
+Search for &amp;lsquo;linter&amp;rsquo; and install the latest version.
+Search for ‘linter-pycodestyle’ and install.
+Search for &amp;lsquo;linter-ui-default&amp;rsquo; and install. A pop-up will show up asking to install all the required dependencies, install these dependencies by clicking &amp;ldquo;OK&amp;rdquo; on the pop-up options.</description>
+    </item>
+    <item>
+      <title>Virtual environments in Python</title>
+      <link>//localhost:1313/tools/virtual_environments/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tools/virtual_environments/index.html</guid>
+      <description>Need for virtual environments Python, like most other modern programming languages, has its own unique way of downloading, storing, and resolving packages (or modules). While this has its advantages, there were some interesting decisions made about package storage and resolution, which has lead to some problems particularly with how and where packages are stored.
+It’s important to know this because, by default, every project on your system will use these same directories to store and retrieve site packages (third party libraries).</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on UNH COMP RESOURCES</title>
+    <link>//localhost:1313/programming/index.html</link>
+    <description>Recent content in Programming on UNH COMP RESOURCES</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;  Programming</title>
+      <link>//localhost:1313/programming/cpp/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/programming/cpp/index.html</guid>
+      <description>About C++ is a middle-level language rendering it the advantage of programming low-level (drivers, kernels) and even higher-level applications (games, GUI, desktop apps etc.). The basic syntax and code structure of both C and C++ are the same.
+Some of the features &amp;amp; key-points to note about the programming language are as follows:
+Simple: It is a simple language in the sense that programs can be broken down into logical units and parts, has a rich libray support and a variety of data-types.</description>
+    </item>
+    <item>
+      <title>Java Programming</title>
+      <link>//localhost:1313/programming/java/java/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/programming/java/java/index.html</guid>
+      <description>Code Structure in Java: The source code file holds one class definition. The class represents a piece of the program. A class has one or more methods. A method is a set of statements that states how a method should be performed. How Java works: Type a source code file(example.java). Compile source code file to create a bytecode. The compiler gives complied output file(exampe.class) Java virtual machine runs an example.class file.</description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>//localhost:1313/programming/java-script/java-script/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/programming/java-script/java-script/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Perl Programming</title>
+      <link>//localhost:1313/programming/perl/perl/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/programming/perl/perl/index.html</guid>
+      <description>About Perl is the Swiss Army chainsaw of scripting languages: powerful and adaptable. It was first developed by Larry Wall, a linguist working as a systems administrator for NASA in the late 1980s, as a way to make report processing easier. Since then, it has moved into a large number of roles: automating system administration, acting as glue between different computer systems; and, of course, being one of the most popular languages for CGI programming on the Web.</description>
+    </item>
+    <item>
+      <title>Python Programming</title>
+      <link>//localhost:1313/programming/python/python/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/programming/python/python/index.html</guid>
+      <description>About Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python&amp;rsquo;s design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is often described as a &amp;ldquo;batteries included&amp;rdquo; language due to its comprehensive standard library.</description>
+    </item>
+  </channel>
+</rss>

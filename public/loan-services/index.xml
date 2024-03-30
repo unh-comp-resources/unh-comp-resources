@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Loan Services on UNH COMP RESOURCES</title>
+    <link>//localhost:1313/loan-services/index.html</link>
+    <description>Recent content in Loan Services on UNH COMP RESOURCES</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/loan-services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Student&#39;s guide to loan an equipment</title>
+      <link>//localhost:1313/loan-services/students-guide/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/loan-services/students-guide/index.html</guid>
+      <description>Student&amp;rsquo;s guide to loan an equipment COMP Department provides laptops, mobile phones and other devices like Raspberry pi, mouse, etc to the students of UNH for their academic purposes.
+To loan any kind of equipment, please follow the below procedure:
+Email one of the tech consultants of the COMP department requesting for loaning the equipment.
+Tech consultant will get back with the availability of the equipment.
+If the equipment is ready to loan, make an appointment with tech consultant.</description>
+    </item>
+    <item>
+      <title>Loaned equipment return policy</title>
+      <link>//localhost:1313/loan-services/covid-return-policy/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/loan-services/covid-return-policy/index.html</guid>
+      <description>Loaned equipment return policy These requirements pertain to students who have chosen remote learning and do not come to campus:
+The student who wants to pick up/return AES loaned equipment needs to get their COVID self-test kits. They would need to swab and drop off in the outside receptacle at least 5 days prior to when they plan to come into the building. ​OR The student who wants to pick up/return AES loaned equipment needs to meet one of the AES tech consultants outside of the building for the exchange.</description>
+    </item>
+  </channel>
+</rss>
