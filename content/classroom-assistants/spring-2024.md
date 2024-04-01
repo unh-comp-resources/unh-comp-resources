@@ -17,7 +17,7 @@ weight: 1
   </td>
   <td>
   <link rel="stylesheet" href="/assets/css/custom.css">
-  <img class = "myImage" src="default_m.png" alt="Avatar" style="width:150px;height:150px;">
+  <img class = "myImage" src="saketh.jpg" alt="Avatar" style="width:150px;height:150px;">
   <p class= "heading"><b>Sai Saketh Gooty Kase</b><br/>
   MS in Information Technology<br/>
   <a href="https://www.linkedin.com/in/saisaketh/">LinkedIn</a></p>

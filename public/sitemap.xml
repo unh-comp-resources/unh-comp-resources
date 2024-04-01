@@ -58,9 +58,6 @@
     <loc>//localhost:1313/academic-honesty-in-computing/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/programming/cpp/index.html</loc>
-  </url>
-  <url>
     <loc>//localhost:1313/categories/index.html</loc>
   </url>
   <url>
@@ -70,16 +67,19 @@
     <loc>//localhost:1313/tools/virtual_environments/conda/index.html</loc>
   </url>
   <url>
+    <loc>//localhost:1313/tools/docker/docker/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/tools/git/git_authentication/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/github-pages-setup/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/programming/java/java/index.html</loc>
+    <loc>//localhost:1313/github-pages-setup/hugo/hugo/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/programming/java-script/java-script/index.html</loc>
+    <loc>//localhost:1313/github-pages-setup/jekyll/jekyll/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/tools/python_linter/python_linter/index.html</loc>
@@ -91,16 +91,7 @@
     <loc>//localhost:1313/operating-systems/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/programming/perl/perl/index.html</loc>
-  </url>
-  <url>
     <loc>//localhost:1313/tools/virtual_environments/pipenv/index.html</loc>
-  </url>
-  <url>
-    <loc>//localhost:1313/programming/index.html</loc>
-  </url>
-  <url>
-    <loc>//localhost:1313/programming/python/python/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/tags/index.html</loc>

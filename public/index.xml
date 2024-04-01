@@ -24,13 +24,11 @@ Having someone write the code for you.</description>
       <description>Classroom Assistants - Spring 2024Classroom Assistants - Fall 2023Classroom Assistants - Spring 2023Classroom Assistants - Spring 2022Classroom Assistants - Spring 2021Classroom Assistants - Summer 2021Classroom Assistants - Fall 2021</description>
     </item>
     <item>
-      <title>GitHub Pages</title>
+      <title>Github Pages</title>
       <link>//localhost:1313/github-pages-setup/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/github-pages-setup/index.html</guid>
-      <description>To test your site locally, you&amp;rsquo;ll need
-Ruby Bundler GitHub pages gem Understanding the virtual environment It is an isolated environment separate from other projects. Virtual Environments keep dependencies separated by project and because of that, they allow you to use different versions of Python or third-party libraries in each project you work on.
-What is Jekyll and why use Jekyll? GitHub Pages are public web pages for users, organizations, and repositories,that are freely hosted on GitHub’s github.</description>
+      <description>HugoJekyll</description>
     </item>
     <item>
       <title>Loan Services</title>
@@ -47,20 +45,11 @@ What is Jekyll and why use Jekyll? GitHub Pages are public web pages for users, 
       <description>Dual BootingAlternate Installation of UBUNTU 20.1 in Gen 1 laptopsDual Boot System ConfigurationUbuntuCreating partition on ubuntu during installationUbuntu Installation GuideWindowsCreate partition in windowsWindows Linux Subsystem</description>
     </item>
     <item>
-      <title>Programming</title>
-      <link>//localhost:1313/programming/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programming/index.html</guid>
-      <description>This page consists of brief explanation on how the same program is implemented in different programming languages: Perl, Python, Java, JavaScript, C++.
-The example program taken for this purpose describes how to:
-declare and initialize datatypes simple datatypes like numbers structured datatypes like string, hash or dictionary access elements in each of the different datatypes(indexing) use simple statements, such as assignment, function call, print statements, relational operators. use conditional statements, such as if.</description>
-    </item>
-    <item>
       <title>Tools</title>
       <link>//localhost:1313/tools/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tools/index.html</guid>
-      <description>GitHub AuthenticationLinter for PythonVirtual environments in PythonCondaPipenv</description>
+      <description>DockerGitHub AuthenticationLinter for PythonVirtual environments in PythonCondaPipenv</description>
     </item>
     <item>
       <title>UNH Secure Network</title>

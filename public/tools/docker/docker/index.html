@@ -6,8 +6,7 @@
     <meta name="generator" content="Hugo 0.123.8">
     <meta name="generator" content="Relearn 5.17.1+tip">
     <meta name="description" content="">
-    <title>Operating Systems :: UNH COMP RESOURCES</title>
-    <link href="/operating-systems/index.xml" rel="alternate" type="application/rss+xml" title="Operating Systems :: UNH COMP RESOURCES">
+    <title>Docker :: UNH COMP RESOURCES</title>
   <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
   <link href="/css/fontawesome-all.min.css?1712002655" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1712002655" rel="stylesheet"></noscript>
   <link href="/css/nucleus.css?1712002655" rel="stylesheet">
@@ -39,26 +38,48 @@
     window.variants && variants.init( [ 'relearn-dark', 'relearn-light' ] );
   </script>
   </head>
-  <body class="mobile-support html" data-url="/operating-systems/index.html">
+  <body class="mobile-support html" data-url="/tools/docker/docker/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-            <a class="nav nav-next topbar-link" href="/operating-systems/dual-booting/index.html" title="Dual Booting (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next topbar-link" href="/tools/git/git_authentication/index.html" title="GitHub Authentication (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/loan-services/covid-return-policy/index.html" title="Loaned equipment return policy (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev topbar-link" href="/tools/index.html" title="Tools (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
             </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">UNH COMPUTING RESOURCES</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Operating Systems</span><meta itemprop="position" content="2"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tools/index.html"><span itemprop="name">Tools</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Docker</span><meta itemprop="position" content="3"></li>
             </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-to-docker">Introduction to Docker</a>
+      <ul>
+        <li><a href="#why-docker">Why Docker?</a></li>
+      </ul>
+    </li>
+    <li><a href="#getting-started-with-docker">Getting Started with Docker</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#docker-basics">Docker Basics</a></li>
+        <li><a href="#docker-commands">Docker Commands</a></li>
+      </ul>
+    </li>
+    <li><a href="#docker-resources">Docker Resources</a></li>
+  </ul>
+</nav>
+            </div>
           </div>
         </div>
       </nav>
@@ -67,29 +88,47 @@
           <article class="default">
             <header class="headline">
             </header>
-<h1 id="operating-systems">Operating Systems</h1>
+<h1 id="docker">Docker</h1>
 
-
-<ul class="children children-li children-sort-">
-	
-<li><a href="/operating-systems/dual-booting/index.html">Dual Booting</a><ul>
-	
-<li><a href="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html">Alternate Installation of UBUNTU 20.1 in Gen 1 laptops</a><ul>
-	</ul></li>
-<li><a href="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html">Dual Boot System Configuration</a><ul>
-	</ul></li></ul></li>
-<li><a href="/operating-systems/ubuntu/index.html">Ubuntu</a><ul>
-	
-<li><a href="/operating-systems/ubuntu/ubuntu-partition/ubuntu-partition/index.html">Creating partition on ubuntu during installation</a><ul>
-	</ul></li>
-<li><a href="/operating-systems/ubuntu/ubuntu-installation-guide/ubuntu-installation-guide/index.html">Ubuntu Installation Guide</a><ul>
-	</ul></li></ul></li>
-<li><a href="/operating-systems/windows/index.html">Windows</a><ul>
-	
-<li><a href="/operating-systems/windows/windows-partition/windows-partition/index.html">Create partition in windows</a><ul>
-	</ul></li></ul></li>
-<li><a href="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html">Windows Linux Subsystem</a><ul>
-	</ul></li>
+<h2 id="introduction-to-docker">Introduction to Docker</h2>
+<p>Docker is a platform for developing, shipping, and running applications in containers. Containers allow developers to package an application with all of its dependencies into a standardized unit for software development.</p>
+<h3 id="why-docker">Why Docker?</h3>
+<ul>
+<li><strong>Consistency:</strong> Docker ensures consistency across environments, from development to production.</li>
+<li><strong>Isolation:</strong> Containers isolate applications from the underlying infrastructure, ensuring that they run consistently regardless of where they are deployed.</li>
+<li><strong>Efficiency:</strong> Docker enables lightweight and portable containers, optimizing resource utilization and speeding up the development process.</li>
+<li><strong>Scalability:</strong> Docker makes it easy to scale applications horizontally by adding or removing container instances as needed.</li>
+</ul>
+<h2 id="getting-started-with-docker">Getting Started with Docker</h2>
+<h3 id="installation">Installation</h3>
+<p>To get started with Docker, you&rsquo;ll need to install Docker Engine on your local machine. You can find installation instructions for various operating systems on the <a href="https://docs.docker.com/get-docker/" target="_blank">official Docker website</a>.</p>
+<h3 id="docker-basics">Docker Basics</h3>
+<h4 id="docker-images">Docker Images</h4>
+<p>A Docker image is a lightweight, standalone, executable package that includes everything needed to run a piece of software, including the code, runtime, libraries, and dependencies. You can pull existing images from Docker Hub or create your own custom images using Dockerfiles.</p>
+<h4 id="docker-containers">Docker Containers</h4>
+<p>A Docker container is a running instance of a Docker image. Containers are isolated from each other and from the host system, ensuring that applications run consistently regardless of the environment.</p>
+<h4 id="docker-compose">Docker Compose</h4>
+<p>Docker Compose is a tool for defining and running multi-container Docker applications. With Docker Compose, you can define a multi-container application in a single YAML file and use a single command to start, stop, and manage the entire application stack.</p>
+<h3 id="docker-commands">Docker Commands</h3>
+<h4 id="basic-commands">Basic Commands</h4>
+<ul>
+<li><code>docker pull &lt;image&gt;</code>: Pull an image from a registry.</li>
+<li><code>docker run &lt;image&gt;</code>: Run a container based on an image.</li>
+<li><code>docker ps</code>: List running containers.</li>
+<li><code>docker stop &lt;container&gt;</code>: Stop a running container.</li>
+</ul>
+<h4 id="advanced-commands">Advanced Commands</h4>
+<ul>
+<li><code>docker build &lt;path/to/Dockerfile&gt;</code>: Build a Docker image from a Dockerfile.</li>
+<li><code>docker-compose up</code>: Start a multi-container application defined in a Docker Compose file.</li>
+<li><code>docker exec -it &lt;container&gt; &lt;command&gt;</code>: Execute a command inside a running container.</li>
+</ul>
+<h2 id="docker-resources">Docker Resources</h2>
+<ul>
+<li><a href="https://docs.docker.com/" target="_blank">Docker Documentation</a></li>
+<li><a href="https://hub.docker.com/" target="_blank">Docker Hub</a></li>
+<li><a href="https://docs.docker.com/compose/" target="_blank">Docker Compose Documentation</a></li>
+<li><a href="https://docs.docker.com/engine/reference/builder/" target="_blank">Dockerfile Reference</a></li>
 </ul>
 
             <footer class="footline">
@@ -162,7 +201,7 @@
           <li data-nav-id="/loan-services/index.html" class=""><a class="padding" href="/loan-services/index.html">Loan Services</a><ul id="subsections-fdd606211f1c84022768c1e9a536275f" class="morespace">
           <li data-nav-id="/loan-services/students-guide/index.html" class=""><a class="padding" href="/loan-services/students-guide/index.html">Student&#39;s guide to loan an equipment</a></li>
           <li data-nav-id="/loan-services/covid-return-policy/index.html" class=""><a class="padding" href="/loan-services/covid-return-policy/index.html">Loaned equipment return policy</a></li></ul></li>
-          <li data-nav-id="/operating-systems/index.html" class="active parent "><a class="padding" href="/operating-systems/index.html">Operating Systems</a><ul id="subsections-f8c0c88095c0614d0c6bc24e1783ff31" class="morespace">
+          <li data-nav-id="/operating-systems/index.html" class=""><a class="padding" href="/operating-systems/index.html">Operating Systems</a><ul id="subsections-f8c0c88095c0614d0c6bc24e1783ff31" class="morespace">
           <li data-nav-id="/operating-systems/dual-booting/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/dual-booting/index.html">Dual Booting</a><ul id="subsections-a53dd8f553a7206f9d81da8a9ab7554f" class="morespace">
           <li data-nav-id="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html" class=""><a class="padding" href="/operating-systems/dual-booting/alternate-installation-of-ubuntu-20.1/alternate-installation-of-ubuntu-20-in-gen-1-laptops/index.html">Alternate Installation of UBUNTU 20.1 in Gen 1 laptops</a></li>
           <li data-nav-id="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html" class=""><a class="padding" href="/operating-systems/dual-booting/dual-boot-system-configuration/dual-boot-system-configuration/index.html">Dual Boot System Configuration</a></li></ul></li>
@@ -172,8 +211,8 @@
           <li data-nav-id="/operating-systems/windows/index.html" class="alwaysopen"><a class="padding" href="/operating-systems/windows/index.html">Windows</a><ul id="subsections-b568f5b6e397ebeb13a896190d2cd8f8" class="morespace">
           <li data-nav-id="/operating-systems/windows/windows-partition/windows-partition/index.html" class=""><a class="padding" href="/operating-systems/windows/windows-partition/windows-partition/index.html">Create partition in windows</a></li></ul></li>
           <li data-nav-id="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html" class=""><a class="padding" href="/operating-systems/windows-linux-subsystems/windows-linux-subsystem/index.html">Windows Linux Subsystem</a></li></ul></li>
-          <li data-nav-id="/tools/index.html" class=""><a class="padding" href="/tools/index.html">Tools</a><ul id="subsections-cff67d57e00d6d598d882def3568f700" class="morespace">
-          <li data-nav-id="/tools/docker/docker/index.html" class=""><a class="padding" href="/tools/docker/docker/index.html">Docker</a></li>
+          <li data-nav-id="/tools/index.html" class="parent "><a class="padding" href="/tools/index.html">Tools</a><ul id="subsections-cff67d57e00d6d598d882def3568f700" class="morespace">
+          <li data-nav-id="/tools/docker/docker/index.html" class="active"><a class="padding" href="/tools/docker/docker/index.html">Docker</a></li>
           <li data-nav-id="/tools/git/git_authentication/index.html" class=""><a class="padding" href="/tools/git/git_authentication/index.html">GitHub Authentication</a></li>
           <li data-nav-id="/tools/python_linter/python_linter/index.html" class=""><a class="padding" href="/tools/python_linter/python_linter/index.html">Linter for Python</a></li>
           <li data-nav-id="/tools/virtual_environments/index.html" class="alwaysopen"><a class="padding" href="/tools/virtual_environments/index.html">Virtual environments in Python</a><ul id="subsections-24ec8b3b2701aa40e12395869dbd931c" class="morespace">
@@ -192,7 +231,7 @@
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">Language</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="en" id="en" value="/operating-systems/index.html" selected></option>
+                    <option lang="en" id="en" value="/tools/docker/docker/index.html" selected></option>
                   </select>
                 </div>
                 <div class="select-clear"></div>

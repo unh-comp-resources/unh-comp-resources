@@ -1,13 +1,16 @@
 ---
-title: GitHub Pages
+title: Jekyll
+date: January 2024
+author: Vyshnavi Mulakalapalli
 ---
 
-To test your site locally, you'll need
+## Prerequisites for Testing Your Site Locally
+
+To test your Jekyll site locally, you'll need the following:
 
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Bundler](https://github.com/bundler/bundler)
 - [GitHub pages gem](https://github.com/github/pages-gem)
-
 
 ### Understanding the virtual environment
 It is an isolated environment separate from other projects. Virtual Environments keep dependencies separated by project and because of that, they allow you to use different versions of Python or third-party libraries in each project you work on.
