@@ -1,5 +1,8 @@
 ---
 title: Docker
+date: April 2024
+author: Kalyan
+updated: April 2, 2024
 ---
 
 ## Introduction to Docker
@@ -47,6 +50,8 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 - `docker build <path/to/Dockerfile>`: Build a Docker image from a Dockerfile.
 - `docker-compose up`: Start a multi-container application defined in a Docker Compose file.
 - `docker exec -it <container> <command>`: Execute a command inside a running container.
+
+**Note:** You can run these commands in Git Bash or PowerShell, although Git Bash is preferred.
 
 ## Docker Resources
 

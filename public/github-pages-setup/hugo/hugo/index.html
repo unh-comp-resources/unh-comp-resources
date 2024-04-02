@@ -8,21 +8,21 @@
     <meta name="description" content="">
     <title>Hugo :: UNH COMP RESOURCES</title>
   <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-  <link href="/css/fontawesome-all.min.css?1712002655" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1712002655" rel="stylesheet"></noscript>
-  <link href="/css/nucleus.css?1712002655" rel="stylesheet">
-  <link href="/css/auto-complete.css?1712002655" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1712002655" rel="stylesheet"></noscript>
-  <link href="/css/perfect-scrollbar.min.css?1712002655" rel="stylesheet">
-  <link href="/css/fonts.css?1712002655" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1712002655" rel="stylesheet"></noscript>
-  <link href="/css/theme.css?1712002655" rel="stylesheet">
-  <link href="/css/theme-relearn-dark.css?1712002655" rel="stylesheet" id="variant-style">
-  <link href="/css/variant.css?1712002655" rel="stylesheet">
-  <link href="/css/print.css?1712002655" rel="stylesheet" media="print">
-  <link href="/css/ie.css?1712002655" rel="stylesheet">
-  <script src="/js/url.js?1712002655"></script>
-  <script src="/js/variant.js?1712002655"></script>
+  <link href="/css/fontawesome-all.min.css?1712098167" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1712098167" rel="stylesheet"></noscript>
+  <link href="/css/nucleus.css?1712098167" rel="stylesheet">
+  <link href="/css/auto-complete.css?1712098167" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1712098167" rel="stylesheet"></noscript>
+  <link href="/css/perfect-scrollbar.min.css?1712098167" rel="stylesheet">
+  <link href="/css/fonts.css?1712098167" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1712098167" rel="stylesheet"></noscript>
+  <link href="/css/theme.css?1712098167" rel="stylesheet">
+  <link href="/css/theme-relearn-dark.css?1712098167" rel="stylesheet" id="variant-style">
+  <link href="/css/variant.css?1712098167" rel="stylesheet">
+  <link href="/css/print.css?1712098167" rel="stylesheet" media="print">
+  <link href="/css/ie.css?1712098167" rel="stylesheet">
+  <script src="/js/url.js?1712098167"></script>
+  <script src="/js/variant.js?1712098167"></script>
   <script>
     // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
-    // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+    // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72""
     window.index_json_url="/index.json";
     var root_url="/";
     var baseUri=root_url.replace(/\/$/, '');
@@ -64,6 +64,7 @@
           <div class="default-animation progress">
             <div class="toc-wrapper"><nav id="TableOfContents">
   <ul>
+    <li><a href="#prerequisites-for-testing-your-site-locally">Prerequisites for Testing Your Site Locally</a></li>
     <li><a href="#introduction-to-hugo">Introduction to Hugo</a>
       <ul>
         <li><a href="#why-hugo">Why Hugo?</a></li>
@@ -73,6 +74,8 @@
       <ul>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#hugo-basics">Hugo Basics</a></li>
+        <li><a href="#guidelines-for-local-testing-with-docker">Guidelines for Local Testing with Docker</a></li>
+        <li><a href="#hosting-on-github">Hosting on GitHub</a></li>
         <li><a href="#hugo-resources">Hugo Resources</a></li>
       </ul>
     </li>
@@ -89,6 +92,13 @@
             </header>
 <h1 id="hugo">Hugo</h1>
 
+<h2 id="prerequisites-for-testing-your-site-locally">Prerequisites for Testing Your Site Locally</h2>
+<p>To test your Hugo site locally, you&rsquo;ll need the following:</p>
+<ul>
+<li><a href="https://gohugo.io/" target="_blank">Hugo</a> installed on your local machine. You can find installation instructions for various operating systems on the <a href="https://github.com/gohugoio/hugo/releases" target="_blank">official Hugo website</a>.</li>
+<li>A basic understanding of the command line interface (CLI) to run Hugo commands.</li>
+<li>Optionally, Docker installed on your local machine if you choose to use it for local testing.</li>
+</ul>
 <h2 id="introduction-to-hugo">Introduction to Hugo</h2>
 <p><a href="https://gohugo.io/" target="_blank">Hugo</a> is a fast and modern static site generator written in Go. With its amazing speed and flexibility, Hugo makes building websites simple again.</p>
 <h3 id="why-hugo">Why Hugo?</h3>
@@ -106,11 +116,33 @@
 <h4 id="hugo-commands">Hugo Commands</h4>
 <p>Here are some basic Hugo commands to help you get started:</p>
 <ul>
-<li><code>hugo new site &lt;sitename&gt;</code>: Create a new Hugo site.</li>
-<li><code>hugo new &lt;contenttype&gt;/&lt;contentname&gt;.&lt;extension&gt;</code>: Create a new content file.</li>
-<li><code>hugo server</code>: Run a local development server.</li>
-<li><code>hugo</code>: Build your site into a static website.</li>
+<li><code>hugo version</code>: Check if Hugo is installed.</li>
+<li><code>hugo server</code>: Start a local development server.</li>
+<li><code>docker pull hello-world</code>: Ensure Docker is installed correctly.</li>
+<li><code>docker scout quickview hello-world</code>: View the log after pulling the hello-world image.</li>
+<li><code>docker build -t unh-comp-resources .</code>: Build a Docker image for your Hugo site.</li>
+<li><code>docker run -p 8080:80 unh-comp-resources</code>: Run the Docker container for your Hugo site.</li>
 </ul>
+<p><strong>Note:</strong> You can run these commands in Git Bash or PowerShell, although Git Bash is preferred.</p>
+<h3 id="guidelines-for-local-testing-with-docker">Guidelines for Local Testing with Docker</h3>
+<p>Hugo can be tested locally using Docker to simulate the production environment. Follow these guidelines:</p>
+<ol>
+<li>Install Docker on your local machine.</li>
+<li>Clone your Hugo project repository.</li>
+<li>Navigate to the project directory in your terminal.</li>
+<li>Run the provided Docker commands to start a local Hugo server.</li>
+</ol>
+<p>Your Hugo site will be accessible at <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>.</p>
+<h3 id="hosting-on-github">Hosting on GitHub</h3>
+<p>You can host your Hugo website on GitHub Pages for free. Here&rsquo;s how:</p>
+<ol>
+<li>Create a new repository on GitHub named <code>&lt;username&gt;.github.io</code>, where <code>&lt;username&gt;</code> is your GitHub username.</li>
+<li>Push your Hugo project to the newly created repository.</li>
+<li>In your repository settings, navigate to the &ldquo;Pages&rdquo; section.</li>
+<li>Choose the branch you want to publish (typically <code>main</code> or <code>master</code>) and select the folder containing your Hugo site&rsquo;s static files (usually <code>/public</code>).</li>
+<li>Set up a GitHub Action workflow for building and deploying your Hugo site.</li>
+<li>Once configured, your Hugo website will be automatically built and deployed to GitHub Pages whenever you push changes to your repository.</li>
+</ol>
 <h3 id="hugo-resources">Hugo Resources</h3>
 <ul>
 <li><a href="https://gohugo.io/documentation/" target="_blank">Hugo Documentation</a></li>
@@ -160,12 +192,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1712002655" defer></script>
-        <script src="/js/lunr/lunr.min.js?1712002655" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1712002655" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1712002655" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1712002655" defer></script>
-        <script src="/js/search.js?1712002655" defer></script>
+        <script src="/js/auto-complete.js?1712098167" defer></script>
+        <script src="/js/lunr/lunr.min.js?1712098167" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1712098167" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1712098167" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1712098167" defer></script>
+        <script src="/js/search.js?1712098167" defer></script>
       </div>
       <div id="homelinks" class="default-animation">
         <ul>
@@ -247,8 +279,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1712002655" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1712002655" defer></script>
-    <script src="/js/theme.js?1712002655" defer></script>
+    <script src="/js/clipboard.min.js?1712098167" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1712098167" defer></script>
+    <script src="/js/theme.js?1712098167" defer></script>
   </body>
 </html>
